@@ -291,3 +291,63 @@ def test_eda_missing_and_constant_numeric_columns():
         conn.execute("DELETE FROM sales_data WHERE dataset_id = ?", (test_ds_id,))
         conn.execute("DELETE FROM datasets WHERE id = ?", (test_ds_id,))
 
+# 9. Production & Security Middleware Tests
+def test_security_headers():
+    response = client.get("/api/health")
+    assert response.status_code == 200
+    assert response.headers.get("X-Content-Type-Options") == "nosniff"
+    assert response.headers.get("X-Frame-Options") == "DENY"
+    assert response.headers.get("X-XSS-Protection") == "1; mode=block"
+    assert response.headers.get("Referrer-Policy") == "strict-origin-when-cross-origin"
+
+def test_health_check_metadata():
+    response = client.get("/api/health")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["status"] == "healthy"
+    assert "environment" in data
+    assert "version" in data
+    assert data["version"] == "1.0.0"
+
+def test_upload_and_temp_file_cleanup():
+    import os
+    from backend.seed_data import DATA_DIR
+    csv_content = b"order_id,order_date,customer_id,customer_name,revenue,quantity,unit_price\nORD-999,2024-05-01,C-999,Alice,150.0,3,50.0\n"
+    
+    # Preview upload
+    preview_res = client.post(
+        "/api/upload/preview",
+        files={"file": ("test_upload_file.csv", csv_content, "text/csv")}
+    )
+    assert preview_res.status_code == 200
+    preview_data = preview_res.json()
+    token = preview_data["temp_file_token"]
+    temp_path = os.path.join(DATA_DIR, token)
+    assert os.path.exists(temp_path)
+    
+    # Execute clean and save
+    clean_res = client.post(
+        "/api/upload/clean",
+        data={
+            "temp_file_token": token,
+            "dataset_name": "Test Upload Dataset",
+            "remove_duplicates": True,
+            "impute_missing_numeric": "median",
+            "impute_missing_categorical": "Unknown",
+            "trim_strings": True,
+            "normalize_dates": True,
+            "column_mappings_json": "{}"
+        }
+    )
+    assert clean_res.status_code == 200
+    clean_data = clean_res.json()
+    ds_id = clean_data["dataset_id"]
+    
+    # Verify temp file was cleanly removed
+    assert not os.path.exists(temp_path)
+    
+    # Clean up test dataset
+    delete_res = client.delete(f"/api/datasets/{ds_id}")
+    assert delete_res.status_code == 200
+
+

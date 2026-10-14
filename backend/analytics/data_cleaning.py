@@ -226,7 +226,7 @@ def clean_and_normalize_dataset(
         
     # 2. String trimming & Formula Injection prevention
     if trim_strings:
-        for col in cleaned_df.select_dtypes(include=["object"]):
+        for col in cleaned_df.select_dtypes(include=["object", "string"]):
             cleaned_df[col] = cleaned_df[col].astype(str).str.strip()
             # replace 'nan' string with actual NaN
             cleaned_df[col] = cleaned_df[col].replace({'nan': np.nan, 'None': np.nan, '': np.nan})
@@ -265,7 +265,7 @@ def clean_and_normalize_dataset(
             cleaned_df[col] = cleaned_df[col].fillna(fill_val)
             
     # Categorical columns
-    cat_cols = cleaned_df.select_dtypes(include=["object"]).columns
+    cat_cols = cleaned_df.select_dtypes(include=["object", "string"]).columns
     for col in cat_cols:
         if col != "order_date" and cleaned_df[col].isna().any():
             if impute_missing_categorical == "mode":

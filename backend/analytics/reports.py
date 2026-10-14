@@ -44,7 +44,7 @@ def generate_filtered_sales_csv(
     conn.close()
     
     # Sanitize string columns
-    for col in df.select_dtypes(include=["object"]):
+    for col in df.select_dtypes(include=["object", "string"]):
         df[col] = df[col].apply(sanitize_formula_injection)
         
     return df.to_csv(index=False)
@@ -55,7 +55,7 @@ def generate_segmentation_csv(dataset_id: str) -> str:
     customers = seg_data.get("customers_sample", [])
     df = pd.DataFrame(customers)
     
-    for col in df.select_dtypes(include=["object"]):
+    for col in df.select_dtypes(include=["object", "string"]):
         df[col] = df[col].apply(sanitize_formula_injection)
         
     return df.to_csv(index=False)

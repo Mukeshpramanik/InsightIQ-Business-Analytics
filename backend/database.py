@@ -8,21 +8,29 @@ from typing import Generator
 from contextlib import contextmanager
 
 DB_DIR = os.path.dirname(os.path.abspath(__file__))
-DB_PATH = os.path.join(DB_DIR, "insightiq.db")
+DB_PATH = os.environ.get("DATABASE_PATH", os.path.join(DB_DIR, "insightiq.db"))
+os.makedirs(os.path.dirname(os.path.abspath(DB_PATH)), exist_ok=True)
 
 def get_db_connection() -> sqlite3.Connection:
-    """Return a standard read/write SQLite connection with row factory enabled."""
-    conn = sqlite3.connect(DB_PATH)
+    """Return a standard read/write SQLite connection with WAL mode and row factory enabled."""
+    conn = sqlite3.connect(DB_PATH, timeout=20.0)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys = ON;")
+    try:
+        conn.execute("PRAGMA journal_mode = WAL;")
+    except Exception:
+        pass
+    conn.execute("PRAGMA busy_timeout = 20000;")
     return conn
 
 def get_readonly_connection() -> sqlite3.Connection:
     """Return a strict read-only SQLite connection for safe SQL Lab querying."""
     # SQLite URI mode=ro prevents any write/schema modifications at engine level
-    uri = f"file:{os.path.abspath(DB_PATH)}?mode=ro"
-    conn = sqlite3.connect(uri, uri=True)
+    abs_path = os.path.abspath(DB_PATH)
+    uri = f"file:{abs_path}?mode=ro"
+    conn = sqlite3.connect(uri, uri=True, timeout=20.0)
     conn.row_factory = sqlite3.Row
+    conn.execute("PRAGMA busy_timeout = 20000;")
     return conn
 
 @contextmanager

@@ -10,7 +10,7 @@ import pandas as pd
 from typing import List, Dict, Any
 from backend.database import get_db_connection, init_db
 
-DATA_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data")
+DATA_DIR = os.environ.get("DATA_DIR", os.path.join(os.path.dirname(os.path.abspath(__file__)), "data"))
 os.makedirs(DATA_DIR, exist_ok=True)
 
 CATEGORIES = {

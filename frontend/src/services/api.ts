@@ -4,7 +4,7 @@ import {
   SQLQueryResponse, SampleQuery, DatasetInfo
 } from '../types';
 
-const API_BASE = '/api';
+const API_BASE = (import.meta.env.VITE_API_BASE_URL as string) || '/api';
 
 export const api = {
   // System & Health

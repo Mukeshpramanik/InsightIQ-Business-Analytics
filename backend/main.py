@@ -14,7 +14,7 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Query, Respo
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, Response
 
-from backend.database import init_db, get_db_connection, db_session
+from backend.database import init_db, get_db_connection, db_session, DB_PATH
 from backend.seed_data import seed_sample_data, DATA_DIR
 from backend.models import (
     DashboardData, KPISummary, CategoryBreakdown, RegionBreakdown, TrendPoint,
@@ -47,10 +47,27 @@ from contextlib import asynccontextmanager
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Ensure database schema exists and default sample data is seeded."""
+    """Ensure database schema exists and default sample data is seeded safely across multi-worker processes."""
     logger.info("Initializing InsightIQ database and verifying seed data...")
-    init_db()
-    seed_sample_data(force=False)
+    lock_path = f"{os.path.abspath(DB_PATH)}.init.lock"
+    os.makedirs(os.path.dirname(lock_path), exist_ok=True)
+    try:
+        import fcntl
+        with open(lock_path, "w") as lock_file:
+            try:
+                fcntl.flock(lock_file.fileno(), fcntl.LOCK_EX)
+            except (AttributeError, OSError):
+                pass
+            init_db()
+            seed_sample_data(force=False)
+            try:
+                fcntl.flock(lock_file.fileno(), fcntl.LOCK_UN)
+            except (AttributeError, OSError):
+                pass
+    except Exception as e:
+        logger.warning(f"File locking encountered warning: {e}. Executing idempotent initialization...")
+        init_db()
+        seed_sample_data(force=False)
     logger.info("InsightIQ backend initialized successfully.")
     yield
 
@@ -61,19 +78,50 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Setup CORS for local frontend development
+# Setup CORS for frontend communication (configurable via CORS_ORIGINS)
+cors_origins_env = os.environ.get("CORS_ORIGINS", "*")
+if cors_origins_env.strip() == "*":
+    origins = ["*"]
+else:
+    origins = [orig.strip() for orig in cors_origins_env.split(",") if orig.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
+@app.middleware("http")
+async def add_security_headers(request, call_next):
+    """Inject standard HTTP security headers into every response."""
+    response = await call_next(request)
+    response.headers["X-Content-Type-Options"] = "nosniff"
+    response.headers["X-Frame-Options"] = "DENY"
+    response.headers["X-XSS-Protection"] = "1; mode=block"
+    response.headers["Referrer-Policy"] = "strict-origin-when-cross-origin"
+    return response
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request, exc):
+    """Catch unhandled errors, log traceback, and return standard JSON error."""
+    if isinstance(exc, HTTPException):
+        return JSONResponse(
+            status_code=exc.status_code,
+            content={"detail": exc.detail},
+            headers=getattr(exc, "headers", None)
+        )
+    logger.exception(f"Unhandled server error on {request.url.path}: {exc}")
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal server error. Please inspect server logs."}
+    )
+
 # --- System & Datasets ---
 @app.get("/api/health")
 def health_check():
-    """Health check endpoint for API and database connectivity verification."""
+    """Health check endpoint for API, database connectivity, and environment verification."""
     conn = get_db_connection()
     cursor = conn.cursor()
     cursor.execute("SELECT COUNT(*) FROM sales_data")
@@ -83,7 +131,8 @@ def health_check():
         "status": "healthy",
         "timestamp": time.time(),
         "database_records": count,
-        "version": "1.0.0"
+        "version": "1.0.0",
+        "environment": os.environ.get("ENVIRONMENT", "development")
     }
 
 @app.get("/api/datasets", response_model=List[DatasetInfo])
@@ -104,11 +153,18 @@ def reset_sample_dataset():
 
 @app.delete("/api/datasets/{dataset_id}")
 def delete_dataset(dataset_id: str):
-    """Deletes an uploaded dataset and cascades to associated transactional records."""
+    """Deletes an uploaded dataset and cascades to associated transactional records and disk files."""
     if dataset_id == "sample_superstore":
         raise HTTPException(status_code=400, detail="Cannot delete default built-in sample dataset. You may reset it instead.")
     with db_session() as conn:
         cursor = conn.cursor()
+        cursor.execute("SELECT file_path FROM datasets WHERE id = ?", (dataset_id,))
+        row = cursor.fetchone()
+        if row and row["file_path"] and os.path.exists(row["file_path"]):
+            try:
+                os.remove(row["file_path"])
+            except Exception as e:
+                logger.warning(f"Could not remove dataset file {row['file_path']}: {e}")
         cursor.execute("DELETE FROM sales_data WHERE dataset_id = ?", (dataset_id,))
         cursor.execute("DELETE FROM datasets WHERE id = ?", (dataset_id,))
     return {"message": f"Dataset '{dataset_id}' deleted successfully."}
@@ -250,6 +306,13 @@ def clean_and_save_upload(
             f"Cleaning applied with {impute_missing_numeric} numeric imputation."
         ))
         
+    # Safely clean up raw preview temporary file
+    try:
+        if os.path.exists(temp_path):
+            os.remove(temp_path)
+    except Exception as cleanup_err:
+        logger.warning(f"Could not remove temp file {temp_path}: {cleanup_err}")
+
     summary["dataset_id"] = dataset_id
     summary["dataset_name"] = dataset_name
     return summary

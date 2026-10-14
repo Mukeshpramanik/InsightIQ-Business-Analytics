@@ -8,7 +8,7 @@ import time
 import sqlite3
 import sqlglot
 from sqlglot import exp
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from backend.database import get_readonly_connection
 
 ALLOWED_TABLES = {"sales_data", "datasets", "cleaning_history"}

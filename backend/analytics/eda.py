@@ -162,7 +162,7 @@ def get_eda_summary(dataset_id: str) -> Dict[str, Any]:
     cat_columns = ["category", "region", "segment", "sub_category"]
     available_cats = [c for c in cat_columns if c in df.columns]
     if not available_cats:
-        available_cats = list(df.select_dtypes(include=["object"]).columns)[:4]
+        available_cats = list(df.select_dtypes(include=["object", "string"]).columns)[:4]
         
     category_frequencies = {}
     for col in available_cats:

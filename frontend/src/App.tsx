@@ -1,19 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { api } from './services/api';
 import { DatasetInfo } from './types';
 import { Sidebar } from './components/Sidebar';
 import { Navbar } from './components/Navbar';
-import { OverviewDashboard } from './pages/OverviewDashboard';
-import { DataImportPage } from './pages/DataImportPage';
-import { EdaPage } from './pages/EdaPage';
-import { SalesAnalyticsPage } from './pages/SalesAnalyticsPage';
-import { ForecastingPage } from './pages/ForecastingPage';
-import { SegmentationPage } from './pages/SegmentationPage';
-import { InsightsPage } from './pages/InsightsPage';
-import { SqlLabPage } from './pages/SqlLabPage';
-import { ReportsPage } from './pages/ReportsPage';
-import { DatasetsPage } from './pages/DatasetsPage';
+import { LoadingSpinner } from './components/StatusStates';
+import { ErrorBoundary } from './components/ErrorBoundary';
+
+// Lazy-loaded page components for route-level code splitting
+const OverviewDashboard = lazy(() => import('./pages/OverviewDashboard').then((m) => ({ default: m.OverviewDashboard })));
+const DataImportPage = lazy(() => import('./pages/DataImportPage').then((m) => ({ default: m.DataImportPage })));
+const EdaPage = lazy(() => import('./pages/EdaPage').then((m) => ({ default: m.EdaPage })));
+const SalesAnalyticsPage = lazy(() => import('./pages/SalesAnalyticsPage').then((m) => ({ default: m.SalesAnalyticsPage })));
+const ForecastingPage = lazy(() => import('./pages/ForecastingPage').then((m) => ({ default: m.ForecastingPage })));
+const SegmentationPage = lazy(() => import('./pages/SegmentationPage').then((m) => ({ default: m.SegmentationPage })));
+const InsightsPage = lazy(() => import('./pages/InsightsPage').then((m) => ({ default: m.InsightsPage })));
+const SqlLabPage = lazy(() => import('./pages/SqlLabPage').then((m) => ({ default: m.SqlLabPage })));
+const ReportsPage = lazy(() => import('./pages/ReportsPage').then((m) => ({ default: m.ReportsPage })));
+const DatasetsPage = lazy(() => import('./pages/DatasetsPage').then((m) => ({ default: m.DatasetsPage })));
 
 export const App: React.FC = () => {
   const [currentDatasetId, setCurrentDatasetId] = useState<string>('sample_superstore');
@@ -71,19 +75,23 @@ export const App: React.FC = () => {
           />
 
           <main className="flex-1 p-4 sm:p-6 lg:p-8 max-w-7xl w-full mx-auto">
-            <Routes>
-              <Route path="/" element={<OverviewDashboard key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
-              <Route path="/import" element={<DataImportPage onDatasetImported={handleDatasetImported} />} />
-              <Route path="/eda" element={<EdaPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
-              <Route path="/sales" element={<SalesAnalyticsPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
-              <Route path="/forecasting" element={<ForecastingPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
-              <Route path="/segmentation" element={<SegmentationPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
-              <Route path="/insights" element={<InsightsPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
-              <Route path="/sql-lab" element={<SqlLabPage />} />
-              <Route path="/reports" element={<ReportsPage datasetId={currentDatasetId} />} />
-              <Route path="/datasets" element={<DatasetsPage currentDatasetId={currentDatasetId} onSelectDataset={(id) => setCurrentDatasetId(id)} />} />
-              <Route path="*" element={<Navigate to="/" replace />} />
-            </Routes>
+            <ErrorBoundary fallbackTitle="Application Error">
+              <Suspense fallback={<LoadingSpinner message="Loading application module..." />}>
+                <Routes>
+                  <Route path="/" element={<OverviewDashboard key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
+                  <Route path="/import" element={<DataImportPage onDatasetImported={handleDatasetImported} />} />
+                  <Route path="/eda" element={<EdaPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
+                  <Route path="/sales" element={<SalesAnalyticsPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
+                  <Route path="/forecasting" element={<ForecastingPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
+                  <Route path="/segmentation" element={<SegmentationPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
+                  <Route path="/insights" element={<InsightsPage key={`${currentDatasetId}-${refreshKey}`} datasetId={currentDatasetId} />} />
+                  <Route path="/sql-lab" element={<SqlLabPage />} />
+                  <Route path="/reports" element={<ReportsPage datasetId={currentDatasetId} />} />
+                  <Route path="/datasets" element={<DatasetsPage currentDatasetId={currentDatasetId} onSelectDataset={(id) => setCurrentDatasetId(id)} />} />
+                  <Route path="*" element={<Navigate to="/" replace />} />
+                </Routes>
+              </Suspense>
+            </ErrorBoundary>
           </main>
         </div>
       </div>

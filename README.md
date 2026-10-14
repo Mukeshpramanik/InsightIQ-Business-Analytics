@@ -73,7 +73,15 @@ InsightIQ solves this by providing an end-to-end analytics platform that:
 cd /Users/mukeshpramanik/Desktop/InsightIQ
 ```
 
-### 1. Start the Backend API (Port 8000)
+### Option A: Docker Compose (Fastest & Zero Setup)
+```bash
+docker compose up -d --build
+```
+Access the application at `http://localhost` and API docs at `http://localhost:8000/docs`.
+
+### Option B: Local Development Scripts
+
+#### 1. Start the Backend API (Port 8000)
 ```bash
 ./run_backend.sh
 ```
@@ -88,7 +96,7 @@ The backend initializes the SQLite database and seeds 3,200 deterministic retail
 - **API Health Check:** `http://127.0.0.1:8000/api/health`
 - **Interactive Swagger Docs:** `http://127.0.0.1:8000/docs`
 
-### 2. Start the Frontend Application (Port 5173)
+#### 2. Start the Frontend Application (Port 5173)
 In a separate terminal window:
 ```bash
 ./run_frontend.sh
@@ -105,16 +113,16 @@ Open **`http://localhost:5173`** in your browser.
 
 ## 5. Running Automated Tests
 
-InsightIQ includes comprehensive test suites covering all backend analytical contracts, formula safety, SQL AST security, and frontend component rendering.
+InsightIQ includes comprehensive test suites covering all backend analytical contracts, formula safety, SQL AST security, security middleware, and frontend component rendering.
 
-### Run Backend Tests (16 Tests)
+### Run Backend Tests (22 Tests)
 ```bash
 PYTHONPATH=. backend/venv/bin/pytest backend/tests/test_backend.py -v
 ```
 
 ### Run Frontend Unit Tests (3 Tests)
 ```bash
-cd frontend && npm test
+cd frontend && npm test -- --run
 ```
 
 ### Run Frontend Production Type-Check & Build
@@ -124,9 +132,10 @@ cd frontend && npm run build
 
 ---
 
-## 6. Project Documentation & Interview Resources
+## 6. Project Documentation & Deployment Resources
 
 Detailed documentation files are available in the [`docs/`](docs/) directory:
+- [**`docs/DEPLOYMENT.md`**](docs/DEPLOYMENT.md): Production deployment guide covering Docker, Linux VPS/systemd/Nginx, SSL certificates, PaaS clouds, and backup strategies.
 - [**`docs/ARCHITECTURE.md`**](docs/ARCHITECTURE.md): System architecture, data ingestion flows, and Mermaid diagrams.
 - [**`docs/PROJECT_REPORT.md`**](docs/PROJECT_REPORT.md): Formal final-year academic capstone report structure.
 - [**`docs/DEMO_SCRIPT.md`**](docs/DEMO_SCRIPT.md): 5–7 minute interview demonstration plan.

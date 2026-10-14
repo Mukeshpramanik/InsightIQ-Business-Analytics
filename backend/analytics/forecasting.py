@@ -7,7 +7,7 @@ Guarantees zero data leakage and mathematically safe error metric calculation.
 import math
 import numpy as np
 import pandas as pd
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Tuple
 from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from backend.database import get_db_connection
