@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+backend/venv/
+.pytest_cache/
+*.sqlite3-journal
+
+# Node / Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Environment & OS
+.env
+.DS_Store
+Thumbs.db

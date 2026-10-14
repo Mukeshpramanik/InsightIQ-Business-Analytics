@@ -1,0 +1,506 @@
+order_id,order_date,customer_id,customer_name,segment,region,country,city,state,category,sub_category,product_id,product_name,quantity,unit_price,discount,shipping_cost,revenue,cost,profit
+ORD-2025-01001,2025-02-20,CUST-0121,Robert Wilson,Consumer,Central,United States,St. Louis,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.0,6.83,780.0,490.0,283.17
+ORD-2025-01002,2025-05-14,CUST-0172,Emily Harris,Consumer,Central,United States,Omaha,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.1,20.86,43.2,26.0,-3.66
+ORD-2024-01003,2024-08-07,CUST-0241,Donald Sanchez,Consumer,East,United States,Philadelphia,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,1,850.0,0.0,8.01,850.0,520.0,321.99
+ORD-2025-01004,2025-09-16,CUST-0312,Barbara Martin,Consumer,North,United States,Boston,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.0,10.1,780.0,490.0,279.9
+ORD-2025-01005,2025-04-15,CUST-0319,Michelle Martin,Consumer,West,United States,Portland,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,2,780.0,0.0,16.61,1560.0,980.0,563.39
+ORD-2024-01006,2024-10-16,CUST-0220,Jennifer Wilson,Home Office,North,United States,Minneapolis,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.0,20.2,2398.0,1780.0,597.8
+ORD-2025-01007,2025-03-01,CUST-0185,Paul Thomas,Consumer,Central,United States,Kansas City,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,4,899.0,0.0,13.59,3596.0,2560.0,1022.41
+ORD-2024-01008,2024-12-25,CUST-0183,Andrew Robinson,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,3,9.5,0.05,22.63,27.07,10.5,-6.06
+ORD-2025-01009,2025-05-22,CUST-0171,Andrew Martinez,Consumer,South,United States,Atlanta,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.05,24.01,1281.55,980.0,277.54
+ORD-2025-01010,2025-05-02,CUST-0246,Joseph Thomas,Consumer,Central,United States,Columbus,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,3,620.0,0.2,5.37,1488.0,1230.0,252.63
+ORD-2024-01011,2024-09-21,CUST-0103,Christopher Anderson,Consumer,South,United States,Charlotte,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.3,17.26,19.6,10.0,-7.66
+ORD-2024-01012,2024-10-23,CUST-0098,Christopher Perez,Home Office,East,United States,Newark,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,13.15,699.0,480.0,205.85
+ORD-2025-01013,2025-08-09,CUST-0226,Joseph Anderson,Corporate,West,United States,Seattle,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,8,165.0,0.0,16.19,1320.0,840.0,463.81
+ORD-2025-01014,2025-09-03,CUST-0266,Mark Taylor,Consumer,Central,United States,Kansas City,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,27.88,699.0,480.0,191.12
+ORD-2024-01015,2024-09-07,CUST-0151,Matthew Hernandez,Consumer,East,United States,Washington D.C.,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.0,18.66,1798.0,1280.0,499.34
+ORD-2025-01016,2025-01-19,CUST-0228,David Williams,Consumer,East,United States,Newark,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,4,699.0,0.0,27.96,2796.0,1920.0,848.04
+ORD-2024-01017,2024-11-04,CUST-0030,Steven Harris,Consumer,North,United States,Chicago,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.1,8.26,810.0,620.0,181.74
+ORD-2024-01018,2024-04-13,CUST-0312,Barbara Martin,Consumer,North,United States,Boston,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.0,19.66,75.0,35.0,20.34
+ORD-2024-01019,2024-12-20,CUST-0017,Christopher Clark,Corporate,North,United States,Boston,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.1,17.99,40.5,18.0,4.51
+ORD-2025-01020,2025-03-04,CUST-0204,Jessica Anderson,Corporate,West,United States,San Francisco,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,5,1199.0,0.0,8.87,5995.0,4450.0,1536.13
+ORD-2025-01021,2025-02-27,CUST-0288,Daniel Smith,Consumer,South,United States,Charlotte,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.3,11.21,944.3,980.0,-46.91
+ORD-2025-01022,2025-08-28,CUST-0252,Ashley Martin,Consumer,East,United States,Philadelphia,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,2,99.0,0.15,14.96,168.3,104.0,49.34
+ORD-2024-01023,2024-06-23,CUST-0350,Daniel Robinson,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,3,14.0,0.0,11.32,42.0,15.0,15.68
+ORD-2024-01024,2024-11-18,CUST-0327,Nancy Williams,Consumer,Central,United States,St. Louis,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.3,23.11,944.3,980.0,-58.81
+ORD-2024-01025,2024-10-13,CUST-0185,Paul Thomas,Consumer,Central,United States,Kansas City,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.05,18.88,627.0,405.0,203.12
+ORD-2024-01026,2024-06-21,CUST-0159,Emily Hernandez,Consumer,West,United States,Seattle,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,3,45.0,,6.23,121.5,54.0,61.27
+ORD-2025-01027,2025-10-20,CUST-0231,Jessica Gonzalez,Corporate,Central,United States,Columbus,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,4,179.0,,19.54,644.4,460.0,164.86
+ORD-2024-01028,2024-09-08,CUST-0067,Sandra Martin,Home Office,North,United States,New York,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,2,850.0,,8.31,1700.0,1040.0,651.69
+ORD-2025-01029,2025-09-11,CUST-0116,David White,Home Office,West,United States,Seattle,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,,17.44,1139.05,890.0,231.61
+ORD-2024-01030,2024-07-27,CUST-0156,Ashley Anderson,Corporate,North,United States,Chicago,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,2,189.0,,18.15,359.1,220.0,120.95
+ORD-2024-01031,2024-08-31,CUST-0320,Emily Sanchez,Corporate,North,United States,Minneapolis,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,3,65.0,,23.89,185.25,96.0,65.36
+ORD-2024-01032,2024-04-09,CUST-0024,Ashley Williams,Corporate,North,United States,Boston,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,2,65.0,,14.29,117.0,64.0,38.71
+ORD-2025-01033,2025-04-15,CUST-0255,Betty Rodriguez,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,2,65.0,,10.25,130.0,64.0,55.75
+ORD-2025-01034,2025-06-24,CUST-0208,Donna Jackson,Home Office,West,United States,San Francisco,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,,15.88,699.0,480.0,203.12
+ORD-2024-01035,2024-09-22,CUST-0311,Elizabeth Davis,Consumer,East,United States,Washington D.C.,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,8,1349.0,,13.87,10792.0,7840.0,2938.13
+ORD-2025-01036,2025-06-02,CUST-0264,Anthony Taylor,Consumer,North,United States,Minneapolis,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,2,179.0,,10.33,358.0,230.0,117.67
+ORD-2024-01037,2024-07-02,CUST-0149,Sarah Hernandez,Home Office,North,United States,Chicago,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,1,65.0,0.15,8.25,55.25,32.0,15.0
+ORD-2024-01038,2024-12-02,CUST-0161,Linda White,Corporate,South,United States,Miami,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,10,49.0,0.0,25.16,490.0,220.0,244.84
+ORD-2025-01039,2025-02-19,CUST-0047,Michael Brown,Corporate,East,United States,Baltimore,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,5,65.0,0.0,12.79,325.0,160.0,152.21
+ORD-2024-01040,2024-05-12,CUST-0254,Michael Perez,Consumer,East,United States,Philadelphia,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,2,45.0,0.1,14.63,81.0,36.0,30.37
+ORD-2025-01041,2025-08-04,CUST-0188,Mary Harris,Corporate,East,United States,Newark,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.05,9.07,9.03,3.5,-3.54
+ORD-2025-01042,2025-03-13,CUST-0038,Paul Harris,Corporate,South,United States,Dallas,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,3,45.0,0.05,18.86,128.25,54.0,55.39
+ORD-2024-01043,2024-07-30,CUST-0050,Richard Miller,Corporate,South,United States,Houston,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.0,16.46,660.0,405.0,238.54
+ORD-2025-01044,2025-02-20,CUST-0024,Ashley Williams,Corporate,North,United States,Boston,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.0,25.49,2998.0,2200.0,772.51
+ORD-2024-01045,2024-08-08,CUST-0314,Andrew Lee,Corporate,Central,United States,Columbus,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.0,16.48,900.0,620.0,263.52
+ORD-2025-01046,2025-02-15,CUST-0289,,Consumer,North,United States,New York,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,1,899.0,0.0,14.29,899.0,640.0,244.71
+ORD-2024-01047,2024-11-22,CUST-0323,,Consumer,South,United States,Atlanta,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,5,450.0,0.1,22.74,2025.0,1550.0,452.26
+ORD-2025-01048,2025-03-23,CUST-0027,,Home Office,North,United States,New York,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,2,950.0,0.05,24.27,1805.0,1360.0,420.73
+ORD-2024-01049,2024-08-14,CUST-0349,,Consumer,South,United States,Houston,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.0,8.06,999.0,720.0,270.94
+ORD-2025-01050,2025-05-04,CUST-0211,Jessica Jackson,Consumer,West,United States,Los Angeles,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,3,75.0,0.0,17.68,225.0,105.0,102.32
+ORD-2025-01051,2025-12-12,CUST-0193,Anthony Thompson,Consumer,West,United States,Portland,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,4,49.0,0.0,12.83,196.0,88.0,95.17
+ORD-2025-01052,2025-06-07,CUST-0349,Elizabeth Clark,Consumer,South,United States,Houston,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.0,17.62,220.0,135.0,67.38
+ORD-2024-01053,2024-10-06,CUST-0153,Sarah Lewis,Corporate,East,United States,Newark,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,1,16.0,0.0,26.44,16.0,8.0,-18.44
+ORD-2025-01054,2025-06-18,CUST-0141,Matthew Gonzalez,Home Office,South,United States,Atlanta,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,3,450.0,0.2,23.41,1080.0,930.0,126.59
+ORD-2024-01055,2024-11-13,CUST-0041,Mary Jackson,Corporate,Central,United States,Indianapolis,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,3,450.0,0.0,23.96,1350.0,930.0,396.04
+ORD-2024-01056,2024-11-02,CUST-0140,Karen Brown,Corporate,East,United States,Newark,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,1,99.0,0.15,9.8,84.15,52.0,22.35
+ORD-2024-01057,2024-10-10,CUST-0170,Andrew Lee,Corporate,South,United States,Miami,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,1,38.0,0.05,26.33,36.1,19.0,-9.23
+ORD-2025-01058,2025-01-10,CUST-0244,Thomas Moore,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.05,25.84,456.0,310.0,120.16
+ORD-2024-01059,2024-06-25,CUST-0294,Margaret Thomas,Corporate,West,United States,Seattle,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.1,26.45,899.1,720.0,152.65
+ORD-2024-01060,2024-04-22,CUST-0204,Jessica Anderson,Corporate,West,United States,San Francisco,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,4,16.0,0.0,17.85,64.0,32.0,14.15
+ORD-2024-01061,2024-07-11,CUST-0172,Emily Harris,Consumer,Central,United States,Omaha,Sample State,Technology   ,Machines,PROD-4953,Canon ImageClass Laser Printer,4,329.0,0.0,9.03,1316.0,960.0,346.97
+ORD-2024-01062,2024-07-16,CUST-0084,Jessica Ramirez,Consumer,South,United States,Houston,Sample State,Office Supplies   ,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.0,11.43,9.5,3.5,-5.43
+ORD-2025-01063,2025-04-28,CUST-0099,Karen Perez,Consumer,West,United States,Seattle,Sample State,Technology   ,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.0,20.23,900.0,620.0,259.77
+ORD-2024-01064,2024-09-09,CUST-0072,Michael Lewis,Consumer,North,United States,New York,Sample State,Furniture   ,Tables,PROD-3262,Solid Oak Executive Desk,1,620.0,0.0,22.21,620.0,410.0,187.79
+ORD-2025-01065,2025-09-29,CUST-0155,Anthony Thomas,Corporate,South,United States,Houston,Sample State,Furniture   ,Chairs,PROD-4186,Steelcase Gesture Chair,2,780.0,0.05,5.96,1482.0,980.0,496.04
+ORD-2024-01066,2024-07-21,CUST-0158,Lisa Thomas,Corporate,East,United States,Baltimore,Sample State,Technology   ,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.15,11.43,1146.65,980.0,155.22
+ORD-2025-01067,2025-04-06,CUST-0113,William Sanchez,Consumer,Central,United States,Omaha,Sample State,Office Supplies   ,Appliances,PROD-3474,Compact Office Microwave,2,119.0,0.3,13.28,166.6,156.0,-2.68
+ORD-2025-01068,2025-05-09,CUST-0242,Sandra Williams,Consumer,South,United States,Houston,Sample State,Office Supplies   ,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,2,48.0,0.05,23.0,91.2,52.0,16.2
+ORD-2025-01069,2025-03-02,CUST-0271,Emily Thompson,Consumer,Central,United States,Omaha,Sample State,Office Supplies   ,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,1,38.0,0.0,16.38,38.0,19.0,2.62
+ORD-2025-01070,2025-03-21,CUST-0077,William Lee,Home Office,South,United States,Houston,Sample State,Technology   ,Machines,PROD-4953,Canon ImageClass Laser Printer,2,329.0,0.1,15.99,592.2,480.0,96.21
+ORD-2025-01071,2025-08-15,CUST-0229,Karen Lee,Home Office,East,United States,Baltimore,Sample State,Office Supplies   ,Appliances,PROD-3474,Compact Office Microwave,2,119.0,0.0,5.86,238.0,156.0,76.14
+ORD-2025-01072,2025-02-04,CUST-0158,Lisa Thomas,Corporate,East,United States,Baltimore,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,3,165.0,0.1,18.09,445.5,315.0,112.41
+ORD-2024-01073,2024-05-05,CUST-0177,Barbara Moore,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,5,28.0,0.0,26.44,140.0,60.0,53.56
+ORD-2024-01074,2024-04-14,CUST-0210,Paul Gonzalez,Consumer,East,United States,Washington D.C.,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,8,249.0,0.05,14.38,1892.4,1280.0,598.02
+ORD-2025-01075,2025-11-24,CUST-0194,John Anderson,Consumer,East,United States,Pittsburgh,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,4,249.0,0.0,27.83,996.0,640.0,328.17
+ORD-2025-01076,2025-01-03,CUST-0066,Christopher Robinson,Corporate,North,United States,New York,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,3,48.0,0.2,15.38,115.2,78.0,21.82
+ORD-2025-01077,2025-05-16,CUST-0218,Paul Gonzalez,Home Office,West,United States,Portland,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,2,620.0,0.0,8.93,1240.0,820.0,411.07
+ORD-2025-01078,2025-07-31,CUST-0058,Paul Johnson,Corporate,North,United States,New York,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,1,329.0,0.0,18.46,329.0,240.0,70.54
+ORD-2025-01079,2025-01-28,CUST-0345,David Clark,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,3,38.0,0.0,10.01,114.0,57.0,46.99
+ORD-2024-01080,2024-10-01,CUST-0029,Charles Wilson,Consumer,North,United States,Chicago,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,3,1199.0,0.1,11.99,3237.3,2670.0,555.31
+ORD-2025-01081,15/11/2024,CUST-0345,David Clark,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,4,16.0,0.3,16.75,44.8,32.0,-3.95
+ORD-2025-01082,15/11/2024,CUST-0141,Matthew Gonzalez,Home Office,South,United States,Atlanta,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,2,249.0,0.05,5.6,473.1,320.0,147.5
+ORD-2024-01083,15/11/2024,CUST-0196,Paul Anderson,Consumer,South,United States,Charlotte,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.0,8.82,14.0,5.0,0.18
+ORD-2025-01084,15/11/2024,CUST-0124,Donald Smith,Home Office,East,United States,Baltimore,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,3,9.5,0.15,17.72,24.22,10.5,-4.0
+ORD-2025-01085,15/11/2024,CUST-0069,Robert Lewis,Consumer,East,United States,Washington D.C.,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,15.07,179.0,115.0,48.93
+ORD-2024-01086,15/11/2024,CUST-0098,Christopher Perez,Home Office,East,United States,Newark,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,4,329.0,0.0,22.4,1316.0,960.0,333.6
+ORD-2025-01087,2025-05-18,CUST-0287,Barbara Rodriguez,Corporate,East,United States,Pittsburgh,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.15,9.48,41.65,22.0,10.17
+ORD-2024-01088,2024-09-13,CUST-0061,Joshua Williams,Corporate,South,United States,Houston,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,2,119.0,0.1,13.82,214.2,156.0,44.38
+ORD-2024-01089,2024-10-14,CUST-0145,Steven Lee,Consumer,West,United States,Denver,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.0,16.19,220.0,135.0,68.81
+ORD-2024-01090,2024-07-03,CUST-0241,Donald Sanchez,Consumer,East,United States,Philadelphia,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.0,17.72,9.5,3.5,-11.72
+ORD-2024-01091,2024-10-03,CUST-0134,Paul Johnson,Home Office,East,United States,Washington D.C.,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.0,13.43,45.0,18.0,13.57
+ORD-2025-01092,2025-07-07,CUST-0256,Jennifer Perez,Consumer,Central,United States,Kansas City,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.0,21.5,660.0,405.0,233.5
+ORD-2025-01093,2025-05-24,CUST-0236,Thomas Perez,Corporate,South,United States,Atlanta,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.0,8.83,1199.0,890.0,300.17
+ORD-2025-01094,2025-08-09,CUST-0329,Nancy Williams,Corporate,South,United States,Dallas,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,3,28.0,0.0,23.72,84.0,36.0,24.28
+ORD-2024-01095,2024-05-09,CUST-0004,Joseph Taylor,Corporate,Central,United States,Indianapolis,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,3,620.0,0.0,16.38,1860.0,1230.0,613.62
+ORD-2024-01096,2024-12-25,CUST-0342,Paul Davis,Consumer,West,United States,San Francisco,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,1,165.0,0.0,14.17,165.0,105.0,45.83
+ORD-2024-01097,2024-03-17,CUST-0141,Matthew Gonzalez,Home Office,South,United States,Atlanta,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,2,179.0,0.05,14.62,340.1,230.0,95.48
+ORD-2025-01098,2025-09-15,CUST-0092,Barbara Jackson,Home Office,East,United States,Philadelphia,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,16.87,699.0,480.0,202.13
+ORD-2025-01099,2025-06-28,CUST-0137,Jessica Jones,Consumer,North,United States,Detroit,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,5,210.0,0.0,10.22,1050.0,650.0,389.78
+ORD-2025-01100,2025-05-07,CUST-0154,James Taylor,Home Office,North,United States,Boston,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,10,189.0,0.05,5.24,1795.5,1100.0,690.26
+ORD-2025-01101,2025-01-09,CUST-0194,John Anderson,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,1,189.0,0.0,16.25,189.0,110.0,62.75
+ORD-2025-01102,2025-01-22,CUST-0170,Andrew Lee,Corporate,South,United States,Miami,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,4,189.0,0.0,25.68,756.0,440.0,290.32
+ORD-2025-01103,2025-05-05,CUST-0291,David Lopez,Consumer,East,United States,Newark,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,2,850.0,0.0,17.26,1700.0,1040.0,642.74
+ORD-2025-01104,2025-04-22,CUST-0092,Barbara Jackson,Home Office,East,United States,Philadelphia,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,5,9.5,0.05,22.18,45.12,17.5,5.44
+ORD-2025-01105,2025-05-13,CUST-0204,Jessica Anderson,Corporate,West,United States,San Francisco,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,2,9.5,0.05,24.46,18.05,7.0,-13.41
+ORD-2025-01106,2025-04-29,CUST-0277,Donald Williams,Consumer,North,United States,New York,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,3,249.0,0.0,27.4,747.0,480.0,239.6
+ORD-2024-01107,2024-05-16,CUST-0224,Barbara Garcia,Consumer,Central,United States,St. Louis,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.05,18.5,1708.1,1280.0,409.6
+ORD-2025-01108,2025-10-15,CUST-0325,Kimberly Martin,Consumer,East,United States,Pittsburgh,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.05,13.32,427.5,310.0,104.18
+ORD-2024-01109,2024-09-10,CUST-0300,James Thomas,Corporate,South,United States,Miami,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,1,189.0,0.0,6.23,189.0,110.0,72.77
+ORD-2024-01110,2024-10-31,CUST-0325,Kimberly Martin,Consumer,East,United States,Pittsburgh,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.0,26.66,450.0,310.0,113.34
+ORD-2025-01111,2025-01-27,CUST-0139,Joshua Martin,Home Office,North,United States,Boston,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.05,16.54,949.05,720.0,212.51
+ORD-2024-01112,2024-07-08,CUST-0046,Donald Davis,Corporate,West,United States,San Francisco,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,2,699.0,0.0,13.55,1398.0,960.0,424.45
+ORD-2024-01113,2024-11-13,CUST-0044,Steven Davis,Consumer,West,United States,San Francisco,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,2,28.0,0.0,13.45,56.0,24.0,18.55
+ORD-2024-01114,2024-08-07,CUST-0155,Anthony Thomas,Corporate,South,United States,Houston,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,1,99.0,0.0,11.54,99.0,52.0,35.46
+ORD-2025-01115,2025-06-12,CUST-0185,Paul Thomas,Consumer,Central,United States,Kansas City,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,2,249.0,0.05,9.1,473.1,320.0,144.0
+ORD-2024-01116,2024-07-11,CUST-0156,Ashley Anderson,Corporate,North,United States,Chicago,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,3,450.0,0.0,24.76,1350.0,930.0,395.24
+ORD-2025-01117,2025-01-25,CUST-0221,David Thompson,Consumer,North,United States,New York,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.05,20.84,26.6,12.0,-6.24
+ORD-2025-01118,2025-02-11,CUST-0091,Paul Hernandez,Home Office,North,United States,Chicago,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,3,14.0,0.05,27.24,39.9,15.0,-2.34
+ORD-2025-01119,2025-06-12,CUST-0167,James Jackson,Consumer,West,United States,Denver,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.05,18.42,427.5,310.0,99.08
+ORD-2025-01120,2025-03-10,CUST-0350,Daniel Robinson,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,5,210.0,0.0,23.25,1050.0,650.0,376.75
+ORD-2025-01121,2025-07-06,CUST-0036,William Jones,Corporate,Central,United States,Indianapolis,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,1,165.0,0.0,10.44,165.0,105.0,49.56
+ORD-2024-01122,2024-08-19,CUST-0217,Michelle Thompson,Consumer,North,United States,Chicago,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,10,210.0,0.0,13.92,2100.0,1300.0,786.08
+ORD-2025-01123,2025-02-22,CUST-0215,Kimberly Robinson,Consumer,South,United States,Houston,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,20.12,179.0,115.0,43.88
+ORD-2024-01124,2024-08-28,CUST-0314,Andrew Lee,Corporate,Central,United States,Columbus,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,5,450.0,0.0,4.75,2250.0,1550.0,695.25
+ORD-2024-01125,2024-10-26,CUST-0266,Mark Taylor,Consumer,Central,United States,Kansas City,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.0,20.47,480.0,310.0,149.53
+ORD-2025-01126,2025-05-04,CUST-0078,Emily Thompson,Consumer,North,United States,New York,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,1,899.0,0.0,27.1,899.0,640.0,231.9
+ORD-2024-01127,2024-07-19,CUST-0073,Emily Jones,Consumer,Central,United States,Indianapolis,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,3,1499.0,0.0,12.69,4497.0,3300.0,1184.31
+ORD-2024-01128,2024-07-02,CUST-0232,Charles Smith,Home Office,West,United States,Seattle,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,3,1199.0,0.0,24.46,3597.0,2670.0,902.54
+ORD-2025-01129,2025-04-18,CUST-0347,Michael Thompson,Home Office,North,United States,Chicago,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,2,48.0,0.0,14.52,96.0,52.0,29.48
+ORD-2025-01130,2025-02-04,CUST-0208,Donna Jackson,Home Office,West,United States,San Francisco,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,2,950.0,0.0,21.83,1900.0,1360.0,518.17
+ORD-2025-01131,2025-08-05,CUST-0231,Jessica Gonzalez,Corporate,Central,United States,Columbus,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,3,75.0,0.0,22.18,225.0,105.0,97.82
+ORD-2025-01132,2025-06-25,CUST-0033,Christopher Thomas,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.0,10.67,480.0,310.0,159.33
+ORD-2025-01133,2025-07-23,CUST-0271,Emily Thompson,Consumer,Central,United States,Omaha,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.05,12.68,26.6,10.0,3.92
+ORD-2025-01134,2025-07-14,CUST-0317,Steven Williams,Consumer,West,United States,Los Angeles,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,2,1349.0,0.05,11.86,2563.1,1960.0,591.24
+ORD-2024-01135,2024-10-14,CUST-0192,Christopher Perez,Consumer,South,United States,Dallas,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,2,45.0,0.05,14.44,85.5,36.0,35.06
+ORD-2025-01136,2025-02-14,CUST-0276,Margaret Hernandez,Corporate,East,United States,Washington D.C.,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,1,950.0,0.0,8.9,950.0,680.0,261.1
+ORD-2025-01137,2025-07-12,CUST-0318,Patricia Lopez,Home Office,North,United States,New York,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.0,13.52,2398.0,1780.0,604.48
+ORD-2025-01138,2025-03-17,CUST-0335,Ashley Miller,Consumer,South,United States,Miami,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,3,45.0,0.0,8.43,135.0,54.0,72.57
+ORD-2025-01139,2025-03-18,CUST-0113,William Sanchez,Consumer,Central,United States,Omaha,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.0,15.25,2398.0,1780.0,602.75
+ORD-2025-01140,2025-05-25,CUST-0254,Michael Perez,Consumer,East,United States,Philadelphia,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,1,189.0,0.1,23.85,170.1,110.0,36.25
+ORD-2024-01141,2024-12-22,CUST-0022,Thomas White,Corporate,Central,United States,St. Louis,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,8,119.0,0.0,24.01,952.0,624.0,303.99
+ORD-2025-01142,2025-05-29,CUST-0153,Sarah Lewis,Corporate,East,United States,Newark,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,1,210.0,0.15,6.54,178.5,130.0,41.96
+ORD-2025-01143,2025-07-25,CUST-0061,Joshua Williams,Corporate,South,United States,Houston,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,3,48.0,0.05,12.74,136.8,78.0,46.06
+ORD-2025-01144,2025-05-12,CUST-0324,Jessica Thompson,Consumer,West,United States,Portland,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,3,620.0,0.1,17.9,1674.0,1230.0,426.1
+ORD-2025-01145,2025-03-05,CUST-0306,Michelle Anderson,Home Office,East,United States,Philadelphia,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.0,24.66,220.0,135.0,60.34
+ORD-2025-01146,2025-11-08,CUST-0049,Patricia Gonzalez,Corporate,North,United States,Boston,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,10,329.0,0.15,7.48,2796.5,2400.0,389.02
+ORD-2025-01147,2025-07-25,CUST-0128,Sandra Robinson,Consumer,Central,United States,Omaha,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,3,1199.0,0.05,16.0,3417.15,2670.0,731.15
+ORD-2025-01148,2025-03-23,CUST-0138,Susan Anderson,Corporate,East,United States,Washington D.C.,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.1,22.57,40.5,18.0,-0.07
+ORD-2025-01149,2025-01-08,CUST-0143,Karen Ramirez,Corporate,North,United States,Detroit,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,5,220.0,0.0,4.56,1100.0,675.0,420.44
+ORD-2025-01150,2025-06-08,CUST-0048,Anthony Anderson,Home Office,North,United States,New York,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,4,165.0,0.1,13.85,594.0,420.0,160.15
+ORD-2025-01151,2025-10-14,CUST-0254,Michael Perez,Consumer,East,United States,Philadelphia,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.0,24.53,2998.0,2200.0,773.47
+ORD-2025-01152,2025-06-15,CUST-0350,Daniel Robinson,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,2,38.0,0.1,4.88,68.4,38.0,25.52
+ORD-2025-01153,2025-09-07,CUST-0081,Margaret Jones,Consumer,East,United States,Philadelphia,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.05,7.6,741.0,490.0,243.4
+ORD-2025-01154,2025-04-19,CUST-0082,Daniel Miller,Corporate,North,United States,Chicago,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,2,9.5,0.0,13.24,19.0,7.0,-1.24
+ORD-2025-01155,2025-08-19,CUST-0085,Mary Garcia,Corporate,East,United States,Baltimore,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,2,1349.0,0.0,19.9,2698.0,1960.0,718.1
+ORD-2025-01156,2025-05-09,CUST-0001,Linda Smith,Corporate,South,United States,Miami,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,2,999.0,0.0,14.96,1998.0,1440.0,543.04
+ORD-2024-01157,2024-02-22,CUST-0176,Susan Rodriguez,Corporate,South,United States,Miami,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,2,119.0,0.0,6.6,238.0,156.0,75.4
+ORD-2025-01158,2025-06-23,CUST-0053,Jennifer Robinson,Corporate,South,United States,Miami,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.1,25.05,1079.1,890.0,164.05
+ORD-2025-01159,2025-04-16,CUST-0347,Michael Thompson,Home Office,North,United States,Chicago,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,2,699.0,0.0,21.48,1398.0,960.0,416.52
+ORD-2025-01160,2025-04-11,CUST-0078,Emily Thompson,Consumer,North,United States,New York,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,4,65.0,0.0,6.86,260.0,128.0,125.14
+ORD-2025-01161,2025-05-30,CUST-0302,Daniel Williams,Consumer,North,United States,Minneapolis,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.0,11.01,14.0,5.0,-2.01
+ORD-2024-01162,2024-06-19,CUST-0284,Sarah Jackson,Consumer,West,United States,Portland,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,3,179.0,0.05,11.59,510.15,345.0,153.56
+ORD-2025-01163,2025-02-27,CUST-0261,Elizabeth Jones,Corporate,South,United States,Atlanta,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.1,23.15,810.0,620.0,166.85
+ORD-2024-01164,2024-10-14,CUST-0124,Donald Smith,Home Office,East,United States,Baltimore,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,4,189.0,0.0,12.99,756.0,440.0,303.01
+ORD-2024-01165,2024-11-27,CUST-0292,Joshua Williams,Home Office,South,United States,Miami,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,5,480.0,0.1,4.89,2160.0,1550.0,605.11
+ORD-2024-01166,2024-06-01,CUST-0135,Robert Harris,Home Office,North,United States,New York,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.05,16.27,1708.1,1280.0,411.83
+ORD-2025-01167,2025-01-14,CUST-0206,Sarah Harris,Corporate,West,United States,Seattle,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.0,26.14,49.0,22.0,0.86
+ORD-2025-01168,2025-10-22,CUST-0168,Nancy Garcia,Home Office,East,United States,Baltimore,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,2,780.0,0.1,24.39,1404.0,980.0,399.61
+ORD-2024-01169,2024-05-21,CUST-0045,Paul Jones,Corporate,Central,United States,Omaha,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,2,210.0,0.0,20.15,420.0,260.0,139.85
+ORD-2025-01170,2025-04-22,CUST-0090,Robert Harris,Consumer,Central,United States,St. Louis,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,1,249.0,0.0,12.65,249.0,160.0,76.35
+ORD-2025-01171,2025-02-27,CUST-0133,Anthony Rodriguez,Home Office,West,United States,Los Angeles,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,3,249.0,0.0,25.33,747.0,480.0,241.67
+ORD-2025-01172,2025-06-07,CUST-0016,David Anderson,Consumer,Central,United States,Indianapolis,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.0,27.41,900.0,620.0,252.59
+ORD-2025-01173,2025-04-11,CUST-0255,Betty Rodriguez,Consumer,North,United States,Minneapolis,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,2,179.0,0.05,13.14,340.1,230.0,96.96
+ORD-2024-01174,2024-10-24,CUST-0294,Margaret Thomas,Corporate,West,United States,Seattle,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,3,850.0,0.0,24.68,2550.0,1560.0,965.32
+ORD-2024-01175,2024-03-06,CUST-0024,Ashley Williams,Corporate,North,United States,Boston,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.2,5.33,60.0,35.0,19.67
+ORD-2025-01176,2025-06-22,CUST-0336,Robert Martinez,Home Office,North,United States,Detroit,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.1,10.87,161.1,115.0,35.23
+ORD-2024-01177,2024-06-13,CUST-0191,Ashley Williams,Consumer,West,United States,Seattle,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.0,5.58,999.0,720.0,273.42
+ORD-2025-01178,2025-01-07,CUST-0239,Anthony Garcia,Consumer,Central,United States,Columbus,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.0,13.17,14.0,5.0,-4.17
+ORD-2024-01179,2024-11-13,CUST-0319,Michelle Martin,Consumer,West,United States,Portland,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,8,1349.0,0.3,22.73,7554.4,7840.0,-308.33
+ORD-2025-01180,2025-05-21,CUST-0280,Nancy Perez,Consumer,East,United States,Baltimore,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.0,9.98,48.0,26.0,12.02
+ORD-2024-01181,2024-12-12,CUST-0005,Paul Wilson,Consumer,Central,United States,Columbus,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,3,210.0,0.1,6.94,567.0,390.0,170.06
+ORD-2025-01182,2025-03-04,CUST-0122,Anthony Johnson,Consumer,West,United States,Denver,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,3,850.0,0.0,26.15,2550.0,1560.0,963.85
+ORD-2025-01183,2025-08-14,CUST-0267,Kimberly Martinez,Consumer,North,United States,New York,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,8,220.0,0.0,6.75,1760.0,1080.0,673.25
+ORD-2024-01184,2024-08-03,CUST-0202,Linda Lee,Home Office,West,United States,Seattle,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.0,11.35,1798.0,1280.0,506.65
+ORD-2025-01185,2025-07-17,CUST-0202,Linda Lee,Home Office,West,United States,Seattle,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.0,26.67,28.0,10.0,-8.67
+ORD-2024-01186,2024-08-05,CUST-0300,James Thomas,Corporate,South,United States,Miami,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.0,7.34,999.0,720.0,271.66
+ORD-2024-01187,2024-12-18,CUST-0232,Charles Smith,Home Office,West,United States,Seattle,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.1,11.65,1079.1,890.0,177.45
+ORD-2025-01188,2025-05-10,CUST-0309,Joseph Hernandez,Corporate,North,United States,Detroit,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.0,12.86,1199.0,890.0,296.14
+ORD-2025-01189,2025-02-25,CUST-0347,Michael Thompson,Home Office,North,United States,Chicago,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,5,99.0,0.15,17.56,420.75,260.0,143.19
+ORD-2025-01190,2025-03-12,CUST-0049,Patricia Gonzalez,Corporate,North,United States,Boston,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,1,620.0,0.1,27.59,558.0,410.0,120.41
+ORD-2024-01191,2024-07-31,CUST-0206,Sarah Harris,Corporate,West,United States,Seattle,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,2,699.0,0.15,6.26,1188.3,960.0,222.04
+ORD-2025-01192,2025-12-07,CUST-0331,Joshua Thompson,Home Office,East,United States,Newark,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,4,620.0,0.1,12.29,2232.0,1640.0,579.71
+ORD-2024-01193,2024-05-01,CUST-0237,John Martinez,Corporate,North,United States,Detroit,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.0,14.53,900.0,620.0,265.47
+ORD-2024-01194,2024-12-16,CUST-0141,Matthew Gonzalez,Home Office,South,United States,Atlanta,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,2,99.0,0.05,19.71,188.1,104.0,64.39
+ORD-2025-01195,2025-02-19,CUST-0282,Andrew Taylor,Consumer,West,United States,San Francisco,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.0,19.6,780.0,490.0,270.4
+ORD-2025-01196,2025-06-19,CUST-0128,Sandra Robinson,Consumer,Central,United States,Omaha,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,3,780.0,0.0,17.3,2340.0,1470.0,852.7
+ORD-2025-01197,2025-02-13,CUST-0290,Kimberly Miller,Consumer,West,United States,Seattle,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.0,9.65,45.0,18.0,17.35
+ORD-2025-01198,2025-08-13,CUST-0144,John Lopez,Corporate,East,United States,Philadelphia,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,3,450.0,0.3,27.39,945.0,930.0,-12.39
+ORD-2024-01199,2024-07-05,CUST-0337,Paul Clark,Corporate,Central,United States,Kansas City,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,2,999.0,0.3,13.63,1398.6,1440.0,-55.03
+ORD-2025-01200,2025-09-12,CUST-0089,Mary Perez,Consumer,East,United States,Pittsburgh,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,2,1349.0,0.15,5.16,2293.3,1960.0,328.14
+ORD-2025-01201,2025-05-08,CUST-0291,David Lopez,Consumer,East,United States,Newark,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,2,480.0,0.0,5.39,960.0,620.0,334.61
+ORD-2024-01202,2024-05-19,CUST-0309,Joseph Hernandez,Corporate,North,United States,Detroit,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,1,329.0,0.05,23.45,312.55,240.0,49.1
+ORD-2024-01203,2024-12-09,CUST-0166,Charles Thompson,Home Office,West,United States,Los Angeles,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,3,249.0,0.0,7.11,747.0,480.0,259.89
+ORD-2025-01204,2025-03-02,CUST-0187,Jennifer Davis,Home Office,Central,United States,Omaha,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.0,12.08,28.0,10.0,5.92
+ORD-2025-01205,2025-10-24,CUST-0224,Barbara Garcia,Consumer,Central,United States,St. Louis,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,1,165.0,0.2,20.8,132.0,105.0,6.2
+ORD-2025-01206,2025-09-06,CUST-0183,Andrew Robinson,Consumer,North,United States,Minneapolis,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.05,7.49,46.55,22.0,17.06
+ORD-2025-01207,2025-05-20,CUST-0294,Margaret Thomas,Corporate,West,United States,Seattle,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,2,850.0,0.15,27.24,1445.0,1040.0,377.76
+ORD-2024-01208,2024-10-03,CUST-0255,Betty Rodriguez,Consumer,North,United States,Minneapolis,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.0,19.45,999.0,720.0,259.55
+ORD-2025-01209,2025-10-09,CUST-0344,Charles Harris,Consumer,Central,United States,St. Louis,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.0,20.79,220.0,135.0,64.21
+ORD-2024-01210,2024-12-14,CUST-0001,Linda Smith,Corporate,South,United States,Miami,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,5,450.0,0.15,16.09,1912.5,1550.0,346.41
+ORD-2024-01211,2024-12-28,CUST-0052,Emily Brown,Consumer,Central,United States,Kansas City,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.0,24.38,28.0,12.0,-8.38
+ORD-2024-01212,2024-11-15,CUST-0054,Anthony Thomas,Consumer,West,United States,Los Angeles,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.0,26.63,49.0,22.0,0.37
+ORD-2025-01213,2025-10-28,CUST-0315,Christopher Jones,Consumer,West,United States,Denver,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,5,210.0,0.0,25.41,1050.0,650.0,374.59
+ORD-2024-01214,2024-08-21,CUST-0052,Emily Brown,Consumer,Central,United States,Kansas City,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,2,49.0,0.1,21.65,88.2,44.0,22.55
+ORD-2024-01215,2024-10-30,CUST-0122,Anthony Johnson,Consumer,West,United States,Denver,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.0,14.55,450.0,310.0,125.45
+ORD-2024-01216,2024-11-15,CUST-0308,Betty Taylor,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,1,850.0,0.05,27.46,807.5,520.0,260.04
+ORD-2025-01217,2025-02-09,CUST-0060,Patricia Taylor,Consumer,South,United States,Atlanta,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.05,6.64,855.0,620.0,228.36
+ORD-2025-01218,2025-03-10,CUST-0095,Thomas Johnson,Corporate,North,United States,Detroit,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.0,14.83,450.0,310.0,125.17
+ORD-2024-01219,2024-10-29,CUST-0289,Betty Williams,Consumer,North,United States,New York,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,2,999.0,0.1,14.23,1798.2,1440.0,343.97
+ORD-2025-01220,2025-05-31,CUST-0117,Jessica Clark,Corporate,Central,United States,St. Louis,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,5,45.0,0.05,26.5,213.75,90.0,97.25
+ORD-2025-01221,2025-03-21,CUST-0121,Robert Wilson,Consumer,Central,United States,St. Louis,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,4,780.0,0.1,16.3,2808.0,1960.0,831.7
+ORD-2025-01222,2025-08-16,CUST-0293,Michelle Johnson,Corporate,East,United States,Baltimore,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,5,620.0,0.0,26.8,3100.0,2050.0,1023.2
+ORD-2024-01223,2024-08-28,CUST-0109,Anthony Lewis,Corporate,South,United States,Houston,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.3,14.73,33.6,26.0,-7.13
+ORD-2025-01224,2025-12-08,CUST-0305,Linda Gonzalez,Consumer,East,United States,Washington D.C.,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.0,12.16,999.0,720.0,266.84
+ORD-2024-01225,2024-11-05,CUST-0007,Sarah Jones,Consumer,East,United States,Philadelphia,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,1,65.0,0.0,17.81,65.0,32.0,15.19
+ORD-2025-01226,2025-03-25,CUST-0052,Emily Brown,Consumer,Central,United States,Kansas City,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,3,28.0,0.15,25.18,71.4,36.0,10.22
+ORD-2025-01227,2025-08-02,CUST-0136,Jessica Miller,Home Office,Central,United States,Indianapolis,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.0,7.88,45.0,18.0,19.12
+ORD-2025-01228,2025-04-04,CUST-0206,Sarah Harris,Corporate,West,United States,Seattle,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.1,26.14,1214.1,980.0,207.96
+ORD-2025-01229,2025-08-14,CUST-0011,Michelle Lewis,Home Office,Central,United States,Indianapolis,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,1,1499.0,0.0,20.86,1499.0,1100.0,378.14
+ORD-2024-01230,2024-07-03,CUST-0117,Jessica Clark,Corporate,Central,United States,St. Louis,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.0,19.67,450.0,310.0,120.33
+ORD-2024-01231,2024-09-12,CUST-0109,Anthony Lewis,Corporate,South,United States,Houston,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,3,165.0,0.15,23.79,420.75,315.0,81.96
+ORD-2025-01232,2025-02-26,CUST-0082,Daniel Miller,Corporate,North,United States,Chicago,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,3,329.0,0.0,17.86,987.0,720.0,249.14
+ORD-2024-01233,2024-09-02,CUST-0103,Christopher Anderson,Consumer,South,United States,Charlotte,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,2,48.0,0.15,21.06,81.6,52.0,8.54
+ORD-2024-01234,2024-11-04,CUST-0259,Donna Miller,Corporate,South,United States,Dallas,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,1,189.0,0.0,18.46,189.0,110.0,60.54
+ORD-2024-01235,2024-09-05,CUST-0243,Emily Lopez,Consumer,West,United States,Los Angeles,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.15,22.1,187.0,135.0,29.9
+ORD-2025-01236,2025-05-04,CUST-0146,Michael Wilson,Home Office,West,United States,San Francisco,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,4,999.0,0.1,9.54,3596.4,2880.0,706.86
+ORD-2024-01237,2024-10-03,CUST-0106,Jennifer Clark,Home Office,South,United States,Dallas,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,4,329.0,0.2,20.53,1052.8,960.0,72.27
+ORD-2025-01238,2025-02-09,CUST-0068,Paul Miller,Consumer,South,United States,Dallas,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,1,850.0,0.1,11.68,765.0,520.0,233.32
+ORD-2025-01239,2025-10-13,CUST-0217,Michelle Thompson,Consumer,North,United States,Chicago,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.0,20.41,14.0,5.0,-11.41
+ORD-2025-01240,2025-07-02,CUST-0204,Jessica Anderson,Corporate,West,United States,San Francisco,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,10,189.0,0.2,24.23,1512.0,1100.0,387.77
+ORD-2025-01241,2025-03-16,CUST-0305,Linda Gonzalez,Consumer,East,United States,Washington D.C.,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,2,179.0,0.0,11.0,358.0,230.0,117.0
+ORD-2024-01242,2024-12-01,CUST-0336,Robert Martinez,Home Office,North,United States,Detroit,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.1,25.64,8.55,3.5,-20.59
+ORD-2025-01243,2025-06-23,CUST-0308,Betty Taylor,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,3,179.0,0.05,27.94,510.15,345.0,137.21
+ORD-2024-01244,2024-10-26,CUST-0199,Ashley Brown,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.1,20.63,25.2,12.0,-7.43
+ORD-2025-01245,2025-04-15,CUST-0244,Thomas Moore,Consumer,East,United States,Pittsburgh,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,3,14.0,0.1,25.1,37.8,15.0,-2.3
+ORD-2024-01246,2024-09-07,CUST-0050,Richard Miller,Corporate,South,United States,Houston,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,5,179.0,0.15,19.88,760.75,575.0,165.87
+ORD-2024-01247,2024-10-04,CUST-0158,Lisa Thomas,Corporate,East,United States,Baltimore,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.0,24.5,220.0,135.0,60.5
+ORD-2025-01248,2025-02-07,CUST-0325,Kimberly Martin,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,4,780.0,0.0,24.89,3120.0,1960.0,1135.11
+ORD-2024-01249,2024-12-29,CUST-0028,Paul Harris,Consumer,East,United States,Philadelphia,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,10,48.0,0.0,27.7,480.0,260.0,192.3
+ORD-2025-01250,2025-08-11,CUST-0235,Joshua Sanchez,Consumer,South,United States,Charlotte,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,2,99.0,0.05,8.66,188.1,104.0,75.44
+ORD-2025-01251,2025-04-13,CUST-0003,Donna Wilson,Consumer,North,United States,Boston,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,2,620.0,0.0,22.95,1240.0,820.0,397.05
+ORD-2025-01252,2025-06-11,CUST-0067,Sandra Martin,Home Office,North,United States,New York,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.0,4.61,45.0,18.0,22.39
+ORD-2025-01253,2025-03-05,CUST-0192,Christopher Perez,Consumer,South,United States,Dallas,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.0,21.74,9.5,3.5,-15.74
+ORD-2024-01254,2024-10-06,CUST-0160,Karen Rodriguez,Consumer,South,United States,Dallas,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.1,11.51,405.0,310.0,83.49
+ORD-2024-01255,2024-11-13,CUST-0306,Michelle Anderson,Home Office,East,United States,Philadelphia,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.15,12.94,63.75,35.0,15.81
+ORD-2024-01256,2024-09-12,CUST-0207,Steven Rodriguez,Home Office,East,United States,Pittsburgh,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,8,249.0,0.0,5.01,1992.0,1280.0,706.99
+ORD-2025-01257,2025-02-22,CUST-0064,Kimberly Hernandez,Home Office,South,United States,Dallas,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,4,899.0,0.0,17.07,3596.0,2560.0,1018.93
+ORD-2024-01258,2024-05-09,CUST-0025,David Sanchez,Corporate,Central,United States,Kansas City,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,2,850.0,0.0,13.44,1700.0,1040.0,646.56
+ORD-2025-01259,2025-03-11,CUST-0243,Emily Lopez,Consumer,West,United States,Los Angeles,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.05,20.07,45.6,26.0,-0.47
+ORD-2024-01260,2024-11-01,CUST-0071,Kimberly Smith,Corporate,Central,United States,Columbus,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,3,189.0,0.0,7.18,567.0,330.0,229.82
+ORD-2024-01261,2024-07-10,CUST-0102,Karen Martinez,Consumer,Central,United States,Omaha,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,8.27,179.0,115.0,55.73
+ORD-2025-01262,2025-03-11,CUST-0107,Joseph Sanchez,Consumer,North,United States,New York,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.0,6.59,45.0,18.0,20.41
+ORD-2024-01263,2024-07-14,CUST-0294,Margaret Thomas,Corporate,West,United States,Seattle,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,3,620.0,0.0,21.5,1860.0,1230.0,608.5
+ORD-2025-01264,2025-08-19,CUST-0330,Karen Lee,Corporate,West,United States,San Francisco,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.0,8.61,2998.0,2200.0,789.39
+ORD-2024-01265,2024-04-26,CUST-0149,Sarah Hernandez,Home Office,North,United States,Chicago,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,3,1499.0,0.0,22.32,4497.0,3300.0,1174.68
+ORD-2024-01266,2024-05-06,CUST-0071,Kimberly Smith,Corporate,Central,United States,Columbus,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.0,19.11,480.0,310.0,150.89
+ORD-2025-01267,2025-08-02,CUST-0048,Anthony Anderson,Home Office,North,United States,New York,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.0,15.23,1199.0,890.0,293.77
+ORD-2025-01268,2025-07-08,CUST-0245,Donna Gonzalez,Home Office,East,United States,Philadelphia,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.1,27.57,43.2,26.0,-10.37
+ORD-2025-01269,2025-07-13,CUST-0054,Anthony Thomas,Consumer,West,United States,Los Angeles,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.0,12.93,45.0,18.0,14.07
+ORD-2024-01270,2024-04-09,CUST-0067,Sandra Martin,Home Office,North,United States,New York,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,4,75.0,0.0,5.99,300.0,140.0,154.01
+ORD-2025-01271,2025-04-21,CUST-0007,Sarah Jones,Consumer,East,United States,Philadelphia,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,8,28.0,0.05,12.45,212.8,96.0,104.35
+ORD-2025-01272,2025-03-01,CUST-0317,Steven Williams,Consumer,West,United States,Los Angeles,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.05,13.54,46.55,22.0,11.01
+ORD-2025-01273,2025-07-10,CUST-0286,Joshua Robinson,Corporate,East,United States,Philadelphia,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.2,16.38,22.4,12.0,-5.98
+ORD-2025-01274,2025-02-07,CUST-0254,Michael Perez,Consumer,East,United States,Philadelphia,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,1,210.0,0.0,11.04,210.0,130.0,68.96
+ORD-2025-01275,2025-02-23,CUST-0282,Andrew Taylor,Consumer,West,United States,San Francisco,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.0,17.97,75.0,35.0,22.03
+ORD-2024-01276,2024-06-23,CUST-0256,Jennifer Perez,Consumer,Central,United States,Kansas City,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,3,780.0,0.0,13.98,2340.0,1470.0,856.02
+ORD-2024-01277,2024-04-21,CUST-0282,Andrew Taylor,Consumer,West,United States,San Francisco,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,5,699.0,0.05,25.42,3320.25,2400.0,894.83
+ORD-2025-01278,2025-03-17,CUST-0336,Robert Martinez,Home Office,North,United States,Detroit,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.1,24.34,594.0,405.0,164.66
+ORD-2024-01279,2024-12-05,CUST-0308,Betty Taylor,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.1,9.71,198.0,135.0,53.29
+ORD-2024-01280,2024-12-09,CUST-0150,Mark Davis,Corporate,Central,United States,Omaha,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,7.8,179.0,115.0,56.2
+ORD-2025-01281,2025-05-15,CUST-0210,Paul Gonzalez,Consumer,East,United States,Washington D.C.,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,1,99.0,0.15,9.57,84.15,52.0,22.58
+ORD-2025-01282,2025-07-03,CUST-0098,Christopher Perez,Home Office,East,United States,Newark,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,1,210.0,0.05,20.3,199.5,130.0,49.2
+ORD-2024-01283,2024-07-25,CUST-0231,Jessica Gonzalez,Corporate,Central,United States,Columbus,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.1,17.5,432.0,310.0,104.5
+ORD-2025-01284,2025-01-22,CUST-0300,James Thomas,Corporate,South,United States,Miami,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,2,950.0,0.1,7.52,1710.0,1360.0,342.48
+ORD-2025-01285,2025-01-01,CUST-0308,Betty Taylor,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.05,20.77,209.0,135.0,53.23
+ORD-2024-01286,2024-10-20,CUST-0176,Susan Rodriguez,Corporate,South,United States,Miami,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,1,119.0,0.05,25.33,113.05,78.0,9.72
+ORD-2025-01287,2025-02-25,CUST-0281,Patricia Martinez,Corporate,East,United States,Philadelphia,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.05,11.33,26.6,12.0,3.27
+ORD-2024-01288,2024-12-11,CUST-0333,Jennifer Lee,Corporate,Central,United States,Columbus,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,3,16.0,0.1,17.71,43.2,24.0,1.49
+ORD-2025-01289,2025-03-25,CUST-0342,Paul Davis,Consumer,West,United States,San Francisco,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,4,65.0,0.0,4.8,260.0,128.0,127.2
+ORD-2024-01290,2024-07-11,CUST-0196,Paul Anderson,Consumer,South,United States,Charlotte,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.1,27.61,899.1,720.0,151.49
+ORD-2025-01291,2025-05-01,CUST-0075,Ashley Rodriguez,Home Office,North,United States,New York,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,3,9.5,0.0,23.63,28.5,10.5,-5.63
+ORD-2024-01292,2024-07-07,CUST-0346,Thomas Johnson,Corporate,East,United States,Newark,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,1,16.0,0.1,23.27,14.4,8.0,-16.87
+ORD-2024-01293,2024-11-11,CUST-0196,Paul Anderson,Consumer,South,United States,Charlotte,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,19.08,179.0,115.0,44.92
+ORD-2025-01294,2025-06-11,CUST-0227,James Lewis,Corporate,East,United States,Newark,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,3,9.5,0.2,11.41,22.8,10.5,0.89
+ORD-2024-01295,2024-09-04,CUST-0350,Daniel Robinson,Consumer,North,United States,Minneapolis,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,2,249.0,0.0,14.57,498.0,320.0,163.43
+ORD-2025-01296,2025-03-15,CUST-0067,Sandra Martin,Home Office,North,United States,New York,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.1,8.14,1079.1,890.0,180.96
+ORD-2024-01297,2024-08-18,CUST-0166,Charles Thompson,Home Office,West,United States,Los Angeles,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.05,6.21,627.0,405.0,215.79
+ORD-2025-01298,2025-05-11,CUST-0270,Elizabeth Williams,Consumer,Central,United States,Omaha,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,1,249.0,0.0,14.27,249.0,160.0,74.73
+ORD-2025-01299,2025-03-07,CUST-0048,Anthony Anderson,Home Office,North,United States,New York,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,1,249.0,0.0,9.63,249.0,160.0,79.37
+ORD-2025-01300,2025-05-30,CUST-0272,Charles Anderson,Consumer,West,United States,Los Angeles,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,2,850.0,0.0,25.76,1700.0,1040.0,634.24
+ORD-2025-01301,2025-04-06,CUST-0319,Michelle Martin,Consumer,West,United States,Portland,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,4,699.0,0.0,23.21,2796.0,1920.0,852.79
+ORD-2024-01302,2024-07-17,CUST-0132,Christopher Hernandez,Corporate,West,United States,Seattle,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,4,179.0,0.1,13.31,644.4,460.0,171.09
+ORD-2025-01303,2025-06-22,CUST-0229,Karen Lee,Home Office,East,United States,Baltimore,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,6.75,179.0,115.0,57.25
+ORD-2025-01304,2025-10-19,CUST-0274,Margaret Anderson,Home Office,West,United States,Seattle,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,2,999.0,0.1,24.83,1798.2,1440.0,333.37
+ORD-2025-01305,2025-01-18,CUST-0054,Anthony Thomas,Consumer,West,United States,Los Angeles,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,3,329.0,0.0,15.29,987.0,720.0,251.71
+ORD-2024-01306,2024-12-04,CUST-0028,Paul Harris,Consumer,East,United States,Philadelphia,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.1,25.91,1214.1,980.0,208.19
+ORD-2025-01307,2025-01-10,CUST-0231,Jessica Gonzalez,Corporate,Central,United States,Columbus,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.05,17.07,42.75,18.0,7.68
+ORD-2025-01308,2025-04-16,CUST-0317,Steven Williams,Consumer,West,United States,Los Angeles,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,3,699.0,0.0,16.32,2097.0,1440.0,640.68
+ORD-2024-01309,2024-11-12,CUST-0311,Elizabeth Davis,Consumer,East,United States,Washington D.C.,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.05,15.64,427.5,310.0,101.86
+ORD-2025-01310,2025-03-05,CUST-0070,Mark Clark,Corporate,East,United States,Newark,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,5,65.0,0.0,20.42,325.0,160.0,144.58
+ORD-2025-01311,2025-08-26,CUST-0332,Matthew Lee,Corporate,South,United States,Charlotte,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,4,699.0,0.0,5.48,2796.0,1920.0,870.52
+ORD-2025-01312,2025-03-21,CUST-0202,Linda Lee,Home Office,West,United States,Seattle,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.1,21.56,702.0,490.0,190.44
+ORD-2024-01313,2024-09-27,CUST-0331,Joshua Thompson,Home Office,East,United States,Newark,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.05,10.44,45.6,26.0,9.16
+ORD-2024-01314,2024-07-18,CUST-0344,Charles Harris,Consumer,Central,United States,St. Louis,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,2,210.0,0.0,20.28,420.0,260.0,139.72
+ORD-2024-01315,2024-10-21,CUST-0298,Joshua Johnson,Consumer,East,United States,Washington D.C.,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.05,6.85,209.0,135.0,67.15
+ORD-2025-01316,2025-04-08,CUST-0100,Emily Jones,Consumer,West,United States,San Francisco,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.0,18.23,900.0,620.0,261.77
+ORD-2025-01317,2025-03-18,CUST-0187,Jennifer Davis,Home Office,Central,United States,Omaha,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,1,119.0,0.0,9.71,119.0,78.0,31.29
+ORD-2025-01318,2025-05-24,CUST-0224,Barbara Garcia,Consumer,Central,United States,St. Louis,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.0,15.78,2398.0,1780.0,602.22
+ORD-2025-01319,2025-01-27,CUST-0157,Joseph Gonzalez,Corporate,East,United States,Newark,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,2,850.0,0.0,11.09,1700.0,1040.0,648.91
+ORD-2025-01320,2025-07-04,CUST-0276,Margaret Hernandez,Corporate,East,United States,Washington D.C.,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,16.42,699.0,480.0,202.58
+ORD-2024-01321,2024-04-13,CUST-0298,Joshua Johnson,Consumer,East,United States,Washington D.C.,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,2,620.0,0.0,27.97,1240.0,820.0,392.03
+ORD-2025-01322,2025-02-08,CUST-0077,William Lee,Home Office,South,United States,Houston,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,3,249.0,0.0,15.42,747.0,480.0,251.58
+ORD-2025-01323,2025-02-24,CUST-0204,Jessica Anderson,Corporate,West,United States,San Francisco,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.2,27.57,559.2,480.0,51.63
+ORD-2025-01324,2025-05-02,CUST-0264,Anthony Taylor,Consumer,North,United States,Minneapolis,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,2,99.0,0.05,25.0,188.1,104.0,59.1
+ORD-2024-01325,2024-08-13,CUST-0248,Anthony Brown,Consumer,North,United States,Chicago,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,3,38.0,0.0,10.71,114.0,57.0,46.29
+ORD-2024-01326,2024-10-11,CUST-0266,Mark Taylor,Consumer,Central,United States,Kansas City,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.0,5.59,28.0,10.0,12.41
+ORD-2025-01327,2025-10-31,CUST-0267,Kimberly Martinez,Consumer,North,United States,New York,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.05,13.35,418.0,270.0,134.65
+ORD-2024-01328,2024-12-28,CUST-0040,Mark Brown,Consumer,North,United States,Chicago,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,2,75.0,0.0,24.89,150.0,70.0,55.11
+ORD-2025-01329,2025-02-14,CUST-0247,Michelle Davis,Corporate,West,United States,Seattle,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,1,38.0,0.0,16.59,38.0,19.0,2.41
+ORD-2024-01330,2024-11-07,CUST-0081,Margaret Jones,Consumer,East,United States,Philadelphia,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.1,21.43,629.1,480.0,127.67
+ORD-2025-01331,2025-02-12,CUST-0246,Joseph Thomas,Consumer,Central,United States,Columbus,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,3,950.0,0.0,5.51,2850.0,2040.0,804.49
+ORD-2025-01332,2025-03-21,CUST-0083,Emily Lewis,Home Office,Central,United States,Indianapolis,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,26.18,699.0,480.0,192.82
+ORD-2025-01333,2025-02-27,CUST-0208,Donna Jackson,Home Office,West,United States,San Francisco,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,3,189.0,0.1,26.76,510.3,330.0,153.54
+ORD-2024-01334,2024-09-30,CUST-0311,Elizabeth Davis,Consumer,East,United States,Washington D.C.,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,1,119.0,0.0,7.85,119.0,78.0,33.15
+ORD-2025-01335,2025-03-25,CUST-0094,Joshua Taylor,Consumer,Central,United States,Indianapolis,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,3,179.0,0.0,15.16,537.0,345.0,176.84
+ORD-2025-01336,2025-03-28,CUST-0118,Jessica Rodriguez,Consumer,East,United States,Washington D.C.,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,1,99.0,0.0,25.87,99.0,52.0,21.13
+ORD-2025-01337,2025-05-02,CUST-0077,William Lee,Home Office,South,United States,Houston,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,4,480.0,0.05,25.13,1824.0,1240.0,558.87
+ORD-2025-01338,2025-03-05,CUST-0061,Joshua Williams,Corporate,South,United States,Houston,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,2,249.0,0.0,26.54,498.0,320.0,151.46
+ORD-2025-01339,2025-04-30,CUST-0221,David Thompson,Consumer,North,United States,New York,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,2,179.0,0.0,26.55,358.0,230.0,101.45
+ORD-2025-01340,2025-02-12,CUST-0196,Paul Anderson,Consumer,South,United States,Charlotte,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,1,899.0,0.0,9.96,899.0,640.0,249.04
+ORD-2025-01341,2025-07-21,CUST-0146,Michael Wilson,Home Office,West,United States,San Francisco,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.1,23.05,40.5,18.0,-0.55
+ORD-2025-01342,2025-03-23,CUST-0061,Joshua Williams,Corporate,South,United States,Houston,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,2,75.0,0.0,13.01,150.0,70.0,66.99
+ORD-2024-01343,2024-08-19,CUST-0334,Mary Lopez,Consumer,South,United States,Dallas,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.05,27.81,418.0,270.0,120.19
+ORD-2025-01344,2025-01-06,CUST-0105,Charles Taylor,Corporate,Central,United States,Columbus,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.05,10.46,71.25,35.0,25.79
+ORD-2024-01345,2024-11-21,CUST-0204,Jessica Anderson,Corporate,West,United States,San Francisco,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,1,38.0,0.05,8.3,36.1,19.0,8.8
+ORD-2024-01346,2024-09-29,CUST-0206,Sarah Harris,Corporate,West,United States,Seattle,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.2,4.62,22.4,12.0,5.78
+ORD-2024-01347,2024-06-26,CUST-0075,Ashley Rodriguez,Home Office,North,United States,New York,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.0,6.38,75.0,35.0,33.62
+ORD-2024-01348,2024-04-24,CUST-0197,Lisa Martin,Corporate,West,United States,Los Angeles,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,3,165.0,0.05,26.72,470.25,315.0,128.53
+ORD-2025-01349,2025-06-30,CUST-0328,Charles Rodriguez,Corporate,Central,United States,Indianapolis,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,4,850.0,0.2,16.68,2720.0,2080.0,623.32
+ORD-2024-01350,2024-09-16,CUST-0307,Margaret Ramirez,Consumer,West,United States,Portland,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,1,950.0,0.0,10.12,950.0,680.0,259.88
+ORD-2024-01351,2024-01-10,CUST-0081,Margaret Jones,Consumer,East,United States,Philadelphia,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,1,1499.0,0.0,18.27,1499.0,1100.0,380.73
+ORD-2025-01352,2025-02-27,CUST-0036,William Jones,Corporate,Central,United States,Indianapolis,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,3,65.0,0.05,18.2,185.25,96.0,71.05
+ORD-2024-01353,2024-12-12,CUST-0116,David White,Home Office,West,United States,Seattle,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,4,480.0,0.05,10.64,1824.0,1240.0,573.36
+ORD-2025-01354,2025-01-10,CUST-0055,David Gonzalez,Consumer,West,United States,Seattle,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,5,220.0,0.1,26.98,990.0,675.0,288.02
+ORD-2025-01355,2025-07-31,CUST-0295,Susan Harris,Consumer,East,United States,Baltimore,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.1,22.3,810.0,620.0,167.7
+ORD-2025-01356,2025-10-06,CUST-0236,Thomas Perez,Corporate,South,United States,Atlanta,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,1,210.0,0.0,19.39,210.0,130.0,60.61
+ORD-2025-01357,2025-11-28,CUST-0118,Jessica Rodriguez,Consumer,East,United States,Washington D.C.,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,2,165.0,0.0,24.06,330.0,210.0,95.94
+ORD-2024-01358,2024-10-20,CUST-0345,David Clark,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,2,9.5,0.0,11.88,19.0,7.0,0.12
+ORD-2024-01359,2024-10-02,CUST-0094,Joshua Taylor,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,3,16.0,0.0,10.19,48.0,24.0,13.81
+ORD-2024-01360,2024-10-30,CUST-0128,Sandra Robinson,Consumer,Central,United States,Omaha,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,3,9.5,0.0,6.34,28.5,10.5,11.66
+ORD-2025-01361,2025-10-01,CUST-0004,Joseph Taylor,Corporate,Central,United States,Indianapolis,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,3,28.0,0.0,11.91,84.0,36.0,36.09
+ORD-2025-01362,2025-08-15,CUST-0295,Susan Harris,Consumer,East,United States,Baltimore,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,8,119.0,0.15,11.09,809.2,624.0,174.11
+ORD-2024-01363,2024-10-04,CUST-0028,Paul Harris,Consumer,East,United States,Philadelphia,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,5,45.0,0.0,12.66,225.0,90.0,122.34
+ORD-2025-01364,2025-07-22,CUST-0090,Robert Harris,Consumer,Central,United States,St. Louis,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,2,189.0,0.0,4.7,378.0,220.0,153.3
+ORD-2025-01365,2025-04-28,CUST-0195,Linda Harris,Consumer,Central,United States,Kansas City,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.0,17.39,440.0,270.0,152.61
+ORD-2024-01366,2024-10-13,CUST-0314,Andrew Lee,Corporate,Central,United States,Columbus,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.0,22.18,49.0,22.0,4.82
+ORD-2024-01367,2024-12-21,CUST-0231,Jessica Gonzalez,Corporate,Central,United States,Columbus,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,2,249.0,0.1,21.44,448.2,320.0,106.76
+ORD-2025-01368,2025-06-22,CUST-0285,Michelle Martin,Corporate,Central,United States,Kansas City,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.2,8.01,60.0,35.0,16.99
+ORD-2025-01369,2025-06-23,CUST-0091,Paul Hernandez,Home Office,North,United States,Chicago,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,2,950.0,0.1,22.96,1710.0,1360.0,327.04
+ORD-2024-01370,2024-11-18,CUST-0291,David Lopez,Consumer,East,United States,Newark,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,10.48,699.0,480.0,208.52
+ORD-2025-01371,2025-07-10,CUST-0050,Richard Miller,Corporate,South,United States,Houston,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,1,220.0,0.05,26.4,209.0,135.0,47.6
+ORD-2024-01372,2024-10-25,CUST-0063,John Martin,Consumer,Central,United States,Omaha,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,2,249.0,0.05,8.6,473.1,320.0,144.5
+ORD-2025-01373,2025-06-11,CUST-0182,Elizabeth Williams,Consumer,East,United States,Newark,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,4,450.0,0.0,11.23,1800.0,1240.0,548.77
+ORD-2025-01374,2025-04-12,CUST-0075,Ashley Rodriguez,Home Office,North,United States,New York,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.05,24.45,26.6,10.0,-7.85
+ORD-2024-01375,2024-06-06,CUST-0083,Emily Lewis,Home Office,Central,United States,Indianapolis,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.1,18.73,2698.2,2200.0,479.47
+ORD-2025-01376,2025-01-05,CUST-0228,David Williams,Consumer,East,United States,Newark,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.0,5.04,14.0,5.0,3.96
+ORD-2025-01377,2025-05-19,CUST-0339,Matthew Jones,Consumer,Central,United States,Indianapolis,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.0,6.0,999.0,720.0,273.0
+ORD-2025-01378,2025-08-02,CUST-0281,Patricia Martinez,Corporate,East,United States,Philadelphia,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,1,329.0,0.05,6.48,312.55,240.0,66.07
+ORD-2025-01379,2025-09-09,CUST-0200,David Martinez,Corporate,Central,United States,St. Louis,Sample State,Technology,Accessories,PROD-9388,Apple AirPods Pro 2,1,249.0,0.05,7.59,236.55,160.0,68.96
+ORD-2025-01380,2025-07-10,CUST-0015,Robert Martin,Corporate,Central,United States,Indianapolis,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,4,1499.0,0.0,24.97,5996.0,4400.0,1571.03
+ORD-2025-01381,2025-09-11,CUST-0281,Patricia Martinez,Corporate,East,United States,Philadelphia,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,2,950.0,0.05,19.44,1805.0,1360.0,425.56
+ORD-2025-01382,2025-03-17,CUST-0269,Mark Williams,Home Office,East,United States,Newark,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.0,6.6,440.0,270.0,163.4
+ORD-2024-01383,2024-11-22,CUST-0080,John Clark,Consumer,Central,United States,Indianapolis,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,3,699.0,0.1,12.58,1887.3,1440.0,434.72
+ORD-2025-01384,2025-02-07,CUST-0005,Paul Wilson,Consumer,Central,United States,Columbus,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.1,23.25,40.5,18.0,-0.75
+ORD-2025-01385,2025-03-30,CUST-0004,Joseph Taylor,Corporate,Central,United States,Indianapolis,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,4,480.0,0.0,10.37,1920.0,1240.0,669.63
+ORD-2025-01386,2025-05-14,CUST-0331,Joshua Thompson,Home Office,East,United States,Newark,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.0,10.13,75.0,35.0,29.87
+ORD-2025-01387,2025-06-04,CUST-0314,Andrew Lee,Corporate,Central,United States,Columbus,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.0,10.82,28.0,10.0,7.18
+ORD-2024-01388,2024-09-12,CUST-0036,William Jones,Corporate,Central,United States,Indianapolis,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.05,10.9,2278.1,1780.0,487.2
+ORD-2025-01389,2025-04-09,CUST-0097,Margaret Williams,Home Office,East,United States,Newark,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,5,99.0,0.0,27.35,495.0,260.0,207.65
+ORD-2024-01390,2024-11-08,CUST-0225,Michelle Perez,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.0,12.53,48.0,26.0,9.47
+ORD-2024-01391,2024-11-24,CUST-0191,Ashley Williams,Consumer,West,United States,Seattle,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.1,7.93,702.0,490.0,204.07
+ORD-2024-01392,2024-10-30,CUST-0279,Emily Johnson,Corporate,Central,United States,Omaha,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,3,480.0,0.1,7.37,1296.0,930.0,358.63
+ORD-2025-01393,2025-06-06,CUST-0128,Sandra Robinson,Consumer,Central,United States,Omaha,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,3,75.0,0.0,15.33,225.0,105.0,104.67
+ORD-2025-01394,2025-06-07,CUST-0267,Kimberly Martinez,Consumer,North,United States,New York,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.2,26.5,384.0,310.0,47.5
+ORD-2024-01395,2024-08-22,CUST-0022,Thomas White,Corporate,Central,United States,St. Louis,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.05,9.17,26.6,12.0,5.43
+ORD-2025-01396,2025-08-08,CUST-0342,Paul Davis,Consumer,West,United States,San Francisco,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,2,999.0,0.0,8.43,1998.0,1440.0,549.57
+ORD-2024-01397,2024-11-05,CUST-0125,Anthony Moore,Corporate,Central,United States,Omaha,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,3,699.0,0.0,18.51,2097.0,1440.0,638.49
+ORD-2024-01398,2024-12-24,CUST-0081,Margaret Jones,Consumer,East,United States,Philadelphia,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.05,20.98,170.05,115.0,34.07
+ORD-2025-01399,2025-06-16,CUST-0065,Jessica Rodriguez,Consumer,East,United States,Baltimore,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.0,9.03,660.0,405.0,245.97
+ORD-2025-01400,2025-05-04,CUST-0184,Karen Thompson,Consumer,East,United States,Newark,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,2,9.5,0.0,11.43,19.0,7.0,0.57
+ORD-2025-01401,2025-05-07,CUST-0098,Christopher Perez,Home Office,East,United States,Newark,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.0,24.04,660.0,405.0,230.96
+ORD-2025-01402,2025-08-26,CUST-0284,Sarah Jackson,Consumer,West,United States,Portland,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,1,49.0,0.0,13.13,49.0,22.0,13.87
+ORD-2024-01403,2024-01-16,CUST-0327,Nancy Williams,Consumer,Central,United States,St. Louis,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,2,620.0,0.0,19.07,1240.0,820.0,400.93
+ORD-2024-01404,2024-11-29,CUST-0276,Margaret Hernandez,Corporate,East,United States,Washington D.C.,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,3,16.0,0.0,11.15,48.0,24.0,12.85
+ORD-2025-01405,2025-01-11,CUST-0165,William Rodriguez,Consumer,North,United States,Detroit,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,3,999.0,0.0,25.03,2997.0,2160.0,811.97
+ORD-2024-01406,2024-09-21,CUST-0249,Ashley Brown,Consumer,Central,United States,Indianapolis,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,2,699.0,0.0,16.01,1398.0,960.0,421.99
+ORD-2025-01407,2025-04-09,CUST-0303,Mary Anderson,Home Office,East,United States,Newark,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.0,26.36,2398.0,1780.0,591.64
+ORD-2024-01408,2024-09-25,CUST-0252,Ashley Martin,Consumer,East,United States,Philadelphia,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,3,210.0,0.0,17.61,630.0,390.0,222.39
+ORD-2025-01409,2025-09-14,CUST-0213,Elizabeth Thomas,Home Office,South,United States,Charlotte,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,2,210.0,0.1,24.11,378.0,260.0,93.89
+ORD-2024-01410,2024-06-13,CUST-0111,Margaret Davis,Consumer,Central,United States,St. Louis,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,3,38.0,0.0,8.95,114.0,57.0,48.05
+ORD-2025-01411,2025-03-02,CUST-0128,Sandra Robinson,Consumer,Central,United States,Omaha,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,3,950.0,0.0,6.98,2850.0,2040.0,803.02
+ORD-2025-01412,2025-04-15,CUST-0184,Karen Thompson,Consumer,East,United States,Newark,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.0,13.94,75.0,35.0,26.06
+ORD-2024-01413,2024-12-07,CUST-0308,Betty Taylor,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.3,24.35,308.0,270.0,13.65
+ORD-2025-01414,2025-01-12,CUST-0325,Kimberly Martin,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,2,179.0,0.0,22.49,358.0,230.0,105.51
+ORD-2025-01415,2025-09-04,CUST-0131,Patricia Rodriguez,Consumer,South,United States,Houston,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,5,450.0,0.0,5.31,2250.0,1550.0,694.69
+ORD-2024-01416,2024-11-09,CUST-0070,Mark Clark,Corporate,East,United States,Newark,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.0,24.61,9.5,3.5,-18.61
+ORD-2024-01417,2024-03-27,CUST-0142,Donna Thompson,Home Office,South,United States,Atlanta,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.0,8.17,28.0,12.0,7.83
+ORD-2024-01418,2024-10-29,CUST-0128,Sandra Robinson,Consumer,Central,United States,Omaha,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.05,9.61,2278.1,1780.0,488.49
+ORD-2024-01419,2024-06-12,CUST-0167,James Jackson,Consumer,West,United States,Denver,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,3,16.0,0.05,18.04,45.6,24.0,3.56
+ORD-2025-01420,2025-08-21,CUST-0305,Linda Gonzalez,Consumer,East,United States,Washington D.C.,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,3,189.0,0.0,22.83,567.0,330.0,214.17
+ORD-2025-01421,2025-09-01,CUST-0172,Emily Harris,Consumer,Central,United States,Omaha,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,5,450.0,0.0,22.6,2250.0,1550.0,677.4
+ORD-2025-01422,2025-05-28,CUST-0309,Joseph Hernandez,Corporate,North,United States,Detroit,Sample State,Office Supplies,Appliances,PROD-3474,Compact Office Microwave,1,119.0,0.0,17.19,119.0,78.0,23.81
+ORD-2024-01423,2024-08-15,CUST-0258,Susan Williams,Home Office,Central,United States,Indianapolis,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,2,620.0,0.3,27.32,868.0,820.0,20.68
+ORD-2025-01424,2025-05-30,CUST-0295,Susan Harris,Consumer,East,United States,Baltimore,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.0,7.61,480.0,310.0,162.39
+ORD-2024-01425,2024-06-18,CUST-0293,Michelle Johnson,Corporate,East,United States,Baltimore,Sample State,Office Supplies,Art,PROD-0239,Heavy-Duty Rotary Paper Trimmer,1,65.0,0.0,14.71,65.0,32.0,18.29
+ORD-2025-01426,2025-05-07,CUST-0070,Mark Clark,Corporate,East,United States,Newark,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.05,17.69,456.0,310.0,128.31
+ORD-2025-01427,2025-12-07,CUST-0125,Anthony Moore,Corporate,Central,United States,Omaha,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.05,7.14,855.0,620.0,227.86
+ORD-2025-01428,2025-01-13,CUST-0188,Mary Harris,Corporate,East,United States,Newark,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.0,11.66,2998.0,2200.0,786.34
+ORD-2025-01429,2025-11-13,CUST-0227,James Lewis,Corporate,East,United States,Newark,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,4,75.0,0.0,20.61,300.0,140.0,139.39
+ORD-2024-01430,2024-08-20,CUST-0044,Steven Davis,Consumer,West,United States,San Francisco,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,5,999.0,0.15,24.92,4245.75,3600.0,620.83
+ORD-2025-01431,2025-06-30,CUST-0008,Jennifer Gonzalez,Consumer,East,United States,Newark,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.0,9.41,1798.0,1280.0,508.59
+ORD-2025-01432,2025-03-07,CUST-0105,Charles Taylor,Corporate,Central,United States,Columbus,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.3,20.83,308.0,270.0,17.17
+ORD-2025-01433,2025-04-26,CUST-0193,Anthony Thompson,Consumer,West,United States,Portland,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.0,23.05,780.0,490.0,266.95
+ORD-2025-01434,2025-04-07,CUST-0028,Paul Harris,Consumer,East,United States,Philadelphia,Sample State,Furniture,Chairs,PROD-2948,Herman Miller Aeron Ergonomic Chair,1,850.0,0.0,24.52,850.0,520.0,305.48
+ORD-2025-01435,2025-04-23,CUST-0056,Sandra Martinez,Consumer,Central,United States,St. Louis,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,8,329.0,0.0,21.18,2632.0,1920.0,690.82
+ORD-2025-01436,2025-08-19,CUST-0249,Ashley Brown,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Art,PROD-7240,Dual-Tip Artist Marker Set,1,28.0,0.0,15.26,28.0,12.0,0.74
+ORD-2025-01437,2025-09-04,CUST-0012,Robert Johnson,Corporate,East,United States,Philadelphia,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.1,4.93,2698.2,2200.0,493.27
+ORD-2025-01438,2025-05-02,CUST-0182,Elizabeth Williams,Consumer,East,United States,Newark,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,1,950.0,0.0,10.56,950.0,680.0,259.44
+ORD-2025-01439,2025-01-01,CUST-0016,David Anderson,Consumer,Central,United States,Indianapolis,Sample State,Office Supplies,Binders,PROD-5385,Heavy-Duty D-Ring Binder 2-Inch,1,9.5,0.15,19.94,8.07,3.5,-15.37
+ORD-2024-01440,2024-06-23,CUST-0196,Paul Anderson,Consumer,South,United States,Charlotte,Sample State,Furniture,Tables,PROD-0812,Adjustable Standing Desk,1,480.0,0.0,27.31,480.0,310.0,142.69
+ORD-2025-01441,2025-08-23,CUST-0169,Linda Clark,Consumer,West,United States,Los Angeles,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,2,620.0,0.05,20.58,1178.0,820.0,337.42
+ORD-2024-01442,2024-09-21,CUST-0071,Kimberly Smith,Corporate,Central,United States,Columbus,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,10,49.0,0.2,7.91,392.0,220.0,164.09
+ORD-2025-01443,2025-09-10,CUST-0081,Margaret Jones,Consumer,East,United States,Philadelphia,Sample State,Technology,Phones,PROD-2413,iPhone 15 Pro,1,999.0,0.15,21.59,849.15,720.0,107.56
+ORD-2025-01444,2025-06-04,CUST-0212,Christopher White,Consumer,West,United States,Denver,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,3,14.0,0.1,19.47,37.8,15.0,3.33
+ORD-2025-01445,2025-05-24,CUST-0078,Emily Thompson,Consumer,North,United States,New York,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,1,38.0,0.1,18.88,34.2,19.0,-3.68
+ORD-2024-01446,2024-10-31,CUST-0119,Sarah Hernandez,Consumer,Central,United States,Kansas City,Sample State,Furniture,Tables,PROD-2975,Conference Room Table,1,950.0,0.0,22.83,950.0,680.0,247.17
+ORD-2024-01447,2024-08-03,CUST-0310,Linda Taylor,Consumer,East,United States,Pittsburgh,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,4,179.0,0.0,7.73,716.0,460.0,248.27
+ORD-2024-01448,2024-09-15,CUST-0017,Christopher Clark,Corporate,North,United States,Boston,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,5,780.0,0.0,20.28,3900.0,2450.0,1429.72
+ORD-2024-01449,2024-09-22,CUST-0105,Charles Taylor,Corporate,Central,United States,Columbus,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.15,25.36,765.0,620.0,119.64
+ORD-2025-01450,2025-01-19,CUST-0022,Thomas White,Corporate,Central,United States,St. Louis,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,1,45.0,0.2,17.94,36.0,18.0,0.06
+ORD-2025-01451,2025-03-06,CUST-0329,Nancy Williams,Corporate,South,United States,Dallas,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,2,38.0,0.1,5.5,68.4,38.0,24.9
+ORD-2025-01452,2025-12-03,CUST-0203,Steven Thompson,Consumer,West,United States,Denver,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,2,210.0,0.05,5.66,399.0,260.0,133.34
+ORD-2024-01453,2024-11-13,CUST-0156,Ashley Anderson,Corporate,North,United States,Chicago,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.0,26.1,14.0,5.0,-17.1
+ORD-2025-01454,2025-05-04,CUST-0073,Emily Jones,Consumer,Central,United States,Indianapolis,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,3,75.0,0.0,22.8,225.0,105.0,97.2
+ORD-2025-01455,2025-09-14,CUST-0280,Nancy Perez,Consumer,East,United States,Baltimore,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.0,18.37,900.0,620.0,261.63
+ORD-2025-01456,2025-05-13,CUST-0104,Donald Sanchez,Home Office,South,United States,Atlanta,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,1,210.0,0.05,21.22,199.5,130.0,48.28
+ORD-2024-01457,2024-08-26,CUST-0064,Kimberly Hernandez,Home Office,South,United States,Dallas,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.1,21.58,405.0,310.0,73.42
+ORD-2025-01458,2025-10-23,CUST-0082,Daniel Miller,Corporate,North,United States,Chicago,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,3,329.0,0.15,17.79,838.95,720.0,101.16
+ORD-2025-01459,2025-04-23,CUST-0077,William Lee,Home Office,South,United States,Houston,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,3,99.0,0.0,11.74,297.0,156.0,129.26
+ORD-2025-01460,2025-05-20,CUST-0229,Karen Lee,Home Office,East,United States,Baltimore,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,4,99.0,0.2,4.58,316.8,208.0,104.22
+ORD-2025-01461,2025-06-04,CUST-0007,Sarah Jones,Consumer,East,United States,Philadelphia,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,2,75.0,0.0,9.6,150.0,70.0,70.4
+ORD-2025-01462,2025-04-22,CUST-0233,James Jackson,Home Office,North,United States,Detroit,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,2,189.0,0.0,17.36,378.0,220.0,140.64
+ORD-2025-01463,2025-04-08,CUST-0286,Joshua Robinson,Corporate,East,United States,Philadelphia,Sample State,Office Supplies,Paper,PROD-4044,Multipurpose Copy Paper 5000 Sheets,1,48.0,0.0,12.7,48.0,26.0,9.3
+ORD-2024-01464,2024-08-12,CUST-0017,Christopher Clark,Corporate,North,United States,Boston,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,4,220.0,0.0,14.3,880.0,540.0,325.7
+ORD-2024-01465,2024-09-05,CUST-0345,David Clark,Consumer,Central,United States,Indianapolis,Sample State,Technology,Accessories,PROD-2910,Anker 65W GaN Charger,3,49.0,0.0,5.34,147.0,66.0,75.66
+ORD-2025-01466,2025-06-06,CUST-0166,Charles Thompson,Home Office,West,United States,Los Angeles,Sample State,Technology,Machines,PROD-4953,Canon ImageClass Laser Printer,3,329.0,0.1,6.03,888.3,720.0,162.27
+ORD-2025-01467,2025-02-07,CUST-0063,John Martin,Consumer,Central,United States,Omaha,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.0,20.85,440.0,270.0,149.15
+ORD-2025-01468,2025-04-05,CUST-0056,Sandra Martinez,Consumer,Central,United States,St. Louis,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,3,780.0,0.05,23.02,2223.0,1470.0,729.98
+ORD-2025-01469,2025-05-11,CUST-0219,John Martin,Consumer,East,United States,Washington D.C.,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,2,220.0,0.3,12.82,308.0,270.0,25.18
+ORD-2024-01470,2024-07-30,CUST-0289,Betty Williams,Consumer,North,United States,New York,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,3,45.0,0.15,9.97,114.75,54.0,50.78
+ORD-2024-01471,2024-11-13,CUST-0061,Joshua Williams,Corporate,South,United States,Houston,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,3,699.0,0.1,27.98,1887.3,1440.0,419.32
+ORD-2025-01472,2025-01-13,CUST-0171,Andrew Martinez,Consumer,South,United States,Atlanta,Sample State,Technology,Accessories,PROD-6650,Logitech MX Master 3S,2,99.0,0.05,10.48,188.1,104.0,73.62
+ORD-2024-01473,2024-06-02,CUST-0154,James Taylor,Home Office,North,United States,Boston,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.0,13.81,179.0,115.0,50.19
+ORD-2025-01474,2025-03-19,CUST-0015,Robert Martin,Corporate,Central,United States,Indianapolis,Sample State,Office Supplies,Paper,PROD-4083,Premium Bright Laser Paper Ream,3,16.0,0.15,15.76,40.8,24.0,1.04
+ORD-2025-01475,2025-02-09,CUST-0019,Susan Robinson,Home Office,East,United States,Washington D.C.,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,2,75.0,0.15,17.12,127.5,70.0,40.38
+ORD-2024-01476,2024-12-06,CUST-0212,Christopher White,Consumer,West,United States,Denver,Sample State,Office Supplies,Storage,PROD-2653,Locking 3-Drawer File Cabinet,2,210.0,0.05,17.55,399.0,260.0,121.45
+ORD-2024-01477,2024-03-21,CUST-0296,Linda Martinez,Corporate,Central,United States,St. Louis,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,5,179.0,0.0,5.23,895.0,575.0,314.77
+ORD-2025-01478,2025-11-05,CUST-0085,Mary Garcia,Corporate,East,United States,Baltimore,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,2,75.0,0.15,22.16,127.5,70.0,35.34
+ORD-2025-01479,2025-05-10,CUST-0162,Susan White,Consumer,Central,United States,Omaha,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,1,14.0,0.15,13.23,11.9,5.0,-6.33
+ORD-2025-01480,2025-07-05,CUST-0155,Anthony Thomas,Corporate,South,United States,Houston,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,1,1199.0,0.1,22.78,1079.1,890.0,166.32
+ORD-2025-01481,2025-08-25,CUST-0228,David Williams,Consumer,East,United States,Newark,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.15,21.71,63.75,35.0,7.04
+ORD-2025-01482,2025-03-01,CUST-0168,Nancy Garcia,Home Office,East,United States,Baltimore,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,2,699.0,0.0,21.53,1398.0,960.0,416.47
+ORD-2025-01483,2025-02-02,CUST-0268,Donald Ramirez,Consumer,North,United States,Minneapolis,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.05,6.55,2278.1,1780.0,491.55
+ORD-2025-01484,2025-02-06,CUST-0024,Ashley Williams,Corporate,North,United States,Boston,Sample State,Technology,Laptops,PROD-7269,MacBook Air M3,2,1199.0,0.0,25.47,2398.0,1780.0,592.53
+ORD-2024-01485,2024-11-29,CUST-0142,Donna Thompson,Home Office,South,United States,Atlanta,Sample State,Furniture,Furnishings,PROD-5928,Architect LED Desk Lamp,1,75.0,0.0,7.19,75.0,35.0,32.81
+ORD-2025-01486,2025-10-03,CUST-0053,Jennifer Robinson,Corporate,South,United States,Miami,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.0,21.05,1349.0,980.0,347.95
+ORD-2024-01487,2024-11-09,CUST-0037,Thomas Taylor,Home Office,West,United States,San Francisco,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,1,1349.0,0.0,15.56,1349.0,980.0,353.44
+ORD-2025-01488,2025-04-28,CUST-0055,David Gonzalez,Consumer,West,United States,Seattle,Sample State,Furniture,Chairs,PROD-4186,Steelcase Gesture Chair,1,780.0,0.1,25.44,702.0,490.0,186.56
+ORD-2025-01489,2025-04-11,CUST-0229,Karen Lee,Home Office,East,United States,Baltimore,Sample State,Furniture,Bookcases,PROD-4220,Modular Steel Storage Shelves,3,220.0,0.1,20.27,594.0,405.0,168.73
+ORD-2025-01490,2025-03-05,CUST-0239,Anthony Garcia,Consumer,Central,United States,Columbus,Sample State,Furniture,Chairs,PROD-7415,Mesh Task Chair,2,189.0,0.0,20.59,378.0,220.0,137.41
+ORD-2025-01491,2025-05-12,CUST-0239,Anthony Garcia,Consumer,Central,United States,Columbus,Sample State,Furniture,Tables,PROD-3262,Solid Oak Executive Desk,4,620.0,0.05,25.95,2356.0,1640.0,690.05
+ORD-2025-01492,2025-01-03,CUST-0341,Michelle Martinez,Corporate,West,United States,San Francisco,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.0,7.15,2998.0,2200.0,790.85
+ORD-2025-01493,2025-02-11,CUST-0088,Daniel Martinez,Home Office,South,United States,Miami,Sample State,Technology,Laptops,PROD-1460,Lenovo ThinkPad X1,2,1349.0,0.0,14.03,2698.0,1960.0,723.97
+ORD-2025-01494,2025-05-14,CUST-0055,David Gonzalez,Consumer,West,United States,Seattle,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.0,14.22,1798.0,1280.0,503.78
+ORD-2025-01495,2025-04-08,CUST-0281,Patricia Martinez,Corporate,East,United States,Philadelphia,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,1,450.0,0.0,20.81,450.0,310.0,119.19
+ORD-2025-01496,2025-01-21,CUST-0223,Margaret Jones,Consumer,West,United States,Portland,Sample State,Furniture,Bookcases,PROD-2441,5-Tier Wooden Bookshelf,1,179.0,0.05,21.88,170.05,115.0,33.17
+ORD-2025-01497,2025-05-13,CUST-0250,Matthew Anderson,Consumer,Central,United States,St. Louis,Sample State,Technology,Machines,PROD-0044,Epson EcoTank Pro,2,450.0,0.1,8.64,810.0,620.0,181.36
+ORD-2025-01498,2025-10-01,CUST-0056,Sandra Martinez,Consumer,Central,United States,St. Louis,Sample State,Furniture,Furnishings,PROD-3506,Floor Anti-Fatigue Mat,2,45.0,0.05,6.63,85.5,36.0,42.87
+ORD-2025-01499,2025-06-29,CUST-0298,Joshua Johnson,Consumer,East,United States,Washington D.C.,Sample State,Office Supplies,Storage,PROD-8618,Heavy-Duty File Storage Box 4-Pack,2,38.0,0.0,11.35,76.0,38.0,26.65
+ORD-2025-01500,2025-04-06,CUST-0229,Karen Lee,Home Office,East,United States,Baltimore,Sample State,Technology,Laptops,PROD-5076,Dell XPS 15,2,1499.0,0.15,11.66,2548.3,2200.0,336.64
+ORD-2024-01011,2024-09-21,CUST-0103,Christopher Anderson,Consumer,South,United States,Charlotte,Sample State,Office Supplies,Binders,PROD-2050,Clear Presentation Sheet Protectors,2,14.0,0.3,17.26,19.6,10.0,-7.66
+ORD-2024-01012,2024-10-23,CUST-0098,Christopher Perez,Home Office,East,United States,Newark,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,13.15,699.0,480.0,205.85
+ORD-2025-01013,2025-08-09,CUST-0226,Joseph Anderson,Corporate,West,United States,Seattle,Sample State,Office Supplies,Appliances,PROD-0647,Countertop Water Cooler Dispenser,8,165.0,0.0,16.19,1320.0,840.0,463.81
+ORD-2025-01014,2025-09-03,CUST-0266,Mark Taylor,Consumer,Central,United States,Kansas City,Sample State,Technology,Phones,PROD-8144,Google Pixel 8,1,699.0,0.0,27.88,699.0,480.0,191.12
+ORD-2024-01015,2024-09-07,CUST-0151,Matthew Hernandez,Consumer,East,United States,Washington D.C.,Sample State,Technology,Phones,PROD-8097,Samsung Galaxy S24,2,899.0,0.0,18.66,1798.0,1280.0,499.34
