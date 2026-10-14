@@ -1,20 +1,114 @@
-# Python
+# ==============================================================================
+# InsightIQ — Git Ignore Rules
+# ==============================================================================
+
+# --- Operating System & Editor Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# --- Environment & Secret Files (Never commit credentials) ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.pfx
+secrets/
+secrets.*
+credentials.json
+token.json
+
+# --- Python & Virtual Environments ---
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+venv/
+.venv/
+env/
+ENV/
 backend/venv/
+backend/.venv/
+
+# --- Testing & Quality Caches ---
 .pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.vitest/
+
+# --- Local Databases & Ephemeral Storage ---
+*.sqlite
+*.sqlite3
+*.db
+backend/*.db
+backend/insightiq.db
 *.sqlite3-journal
-*.lock
+*.db-journal
 *.db-wal
 *.db-shm
+*.lock
+backend/*.lock
 
-# Node / Frontend
+# --- Temporary Uploads & Staging ---
+uploads/
+backend/uploads/
+*.tmp
+*.temp
+temp/
+scratch/
+
+# --- Node & Frontend Build Artifacts ---
+node_modules/
 frontend/node_modules/
 frontend/dist/
 frontend/.vite/
+frontend/.next/
+frontend/out/
 
-# Environment & OS
-.env
-.DS_Store
-Thumbs.db
+# --- Logs ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
