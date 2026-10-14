@@ -199,3 +199,95 @@ def test_pdf_export_endpoint():
     assert response.headers["content-type"] == "application/pdf"
     assert len(response.content) > 1000
     assert response.content.startswith(b"%PDF")
+
+# 8. EDA Analysis & Edge Cases Regression Tests
+def test_eda_analysis_sample_dataset():
+    response = client.get("/api/analytics/eda?dataset_id=sample_superstore")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["row_count"] == 3200
+    assert data["column_count"] > 10
+    assert len(data["descriptive_statistics"]) > 0
+    assert len(data["distributions"]) > 0
+    assert len(data["box_plots"]) > 0
+    assert len(data["correlation_matrix"]) > 0
+    assert len(data["scatter_data"]) > 0
+    
+    # Regression verification for scatter_data string fields
+    first_scatter = data["scatter_data"][0]
+    assert isinstance(first_scatter["x"], (int, float))
+    assert isinstance(first_scatter["y"], (int, float))
+    assert isinstance(first_scatter["category"], str)
+    assert isinstance(first_scatter["product"], str)
+    
+    # Regression verification for schema_info integer counts
+    first_schema = data["schema_info"][0]
+    assert isinstance(first_schema["non_null_count"], int)
+    assert isinstance(first_schema["null_count"], int)
+
+def test_eda_empty_dataset():
+    response = client.get("/api/analytics/eda?dataset_id=non_existent_dataset_999")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["row_count"] == 0
+    assert data["column_count"] == 0
+    assert data["descriptive_statistics"] == []
+    assert data["distributions"] == {}
+    assert data["box_plots"] == {}
+    assert data["scatter_data"] == []
+    assert "distributions" in data["explanations"]
+
+def test_eda_missing_and_constant_numeric_columns():
+    import json
+    from backend.database import db_session
+    test_ds_id = "test_eda_edge_cases"
+    
+    with db_session() as conn:
+        cursor = conn.cursor()
+        cursor.execute("INSERT OR REPLACE INTO datasets (id, name, is_sample) VALUES (?, ?, 0)", (test_ds_id, "Test Edge Cases"))
+        cursor.execute("DELETE FROM sales_data WHERE dataset_id = ?", (test_ds_id,))
+        # Insert 10 rows with constant quantity, zero variance, and null values
+        test_records = []
+        for i in range(10):
+            test_records.append((
+                test_ds_id, f"ORD-TEST-{i}", "2024-06-01", f"CUST-{i}", "Customer Test",
+                "Consumer", "North", "United States", "City", "State",
+                "Technology" if i % 2 == 0 else None, # null category for some
+                "Standard", "P1", "Product 1",
+                5, # constant quantity
+                100.0, # constant unit_price
+                0.0, 5.0, 500.0, 300.0, 195.0
+            ))
+        cursor.executemany("""
+            INSERT INTO sales_data (
+                dataset_id, order_id, order_date, customer_id, customer_name, segment,
+                region, country, city, state, category, sub_category, product_id,
+                product_name, quantity, unit_price, discount, shipping_cost, revenue, cost, profit
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, test_records)
+
+    response = client.get(f"/api/analytics/eda?dataset_id={test_ds_id}")
+    assert response.status_code == 200
+    data = response.json()
+    assert data["row_count"] == 10
+    
+    # Assert constant column handled safely without crashing
+    qty_stats = next(s for s in data["descriptive_statistics"] if s["column"] == "quantity")
+    assert qty_stats["mean"] == 5.0
+    assert qty_stats["std"] == 0.0
+    assert qty_stats["skewness"] == 0.0
+    
+    # Assert JSON payload contains no NaN or Infinity tokens
+    raw_text = response.text
+    assert "NaN" not in raw_text
+    assert "Infinity" not in raw_text
+    assert "-Infinity" not in raw_text
+    # Parse strictly with python standard library json
+    parsed = json.loads(raw_text)
+    assert parsed["row_count"] == 10
+    
+    # Clean up test rows
+    with db_session() as conn:
+        conn.execute("DELETE FROM sales_data WHERE dataset_id = ?", (test_ds_id,))
+        conn.execute("DELETE FROM datasets WHERE id = ?", (test_ds_id,))
+

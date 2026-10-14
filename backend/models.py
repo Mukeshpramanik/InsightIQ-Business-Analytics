@@ -164,16 +164,28 @@ class BoxPlotData(BaseModel):
     outlier_count: int
     outliers_sample: List[float]
 
+class SchemaInfoColumn(BaseModel):
+    column: str
+    dtype: str
+    non_null_count: int
+    null_count: int
+
+class ScatterDataPoint(BaseModel):
+    x: float
+    y: float
+    category: str
+    product: str
+
 class EDAResponse(BaseModel):
     row_count: int
     column_count: int
-    schema_info: List[Dict[str, str]]
+    schema_info: List[SchemaInfoColumn]
     descriptive_statistics: List[DescriptiveStats]
     distributions: Dict[str, List[HistogramBin]]
     box_plots: Dict[str, BoxPlotData]
     category_frequencies: Dict[str, List[Dict[str, Any]]]
     correlation_matrix: Dict[str, Dict[str, float]]
-    scatter_data: List[Dict[str, float]]
+    scatter_data: List[ScatterDataPoint]
     explanations: Dict[str, str]
 
 # --- Forecasting Models ---
