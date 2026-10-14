@@ -167,74 +167,76 @@ def seed_sample_data(force: bool = False) -> str:
     cursor.execute("SELECT id, row_count FROM datasets WHERE id = ?", (sample_id,))
     existing = cursor.fetchone()
     
-    if existing and not force:
-        conn.close()
-        return sample_id
+    if not existing or force:
+        # Generate deterministic orders
+        orders = generate_orders(3200)
+        df = pd.DataFrame(orders)
         
-    # Generate deterministic orders
-    orders = generate_orders(3200)
-    df = pd.DataFrame(orders)
-    
-    # Save clean CSV copy for downloads
-    clean_csv_path = os.path.join(DATA_DIR, "sample_superstore_clean.csv")
-    df.to_csv(clean_csv_path, index=False)
-    
-    # Also generate demo upload with intentional data quality issues for testing/demonstration
-    generate_demo_dirty_csv(df)
-    
-    # Insert or replace dataset metadata
-    cursor.execute("""
-        INSERT OR REPLACE INTO datasets (id, name, description, row_count, column_count, is_sample, file_path)
-        VALUES (?, ?, ?, ?, ?, 1, ?)
-    """, (
-        sample_id,
-        "Global Superstore Retail (2024-2025)",
-        "Deterministic benchmark retail sales dataset spanning 24 months across Technology, Furniture, and Office Supplies with verified financial relationships.",
-        len(orders),
-        len(df.columns),
-        clean_csv_path
-    ))
-    
-    # Delete any previous rows for clean idempotent re-seeding
-    cursor.execute("DELETE FROM sales_data WHERE dataset_id = ?", (sample_id,))
-    
-    # Insert rows in batch
-    insert_records = []
-    for row in orders:
-        insert_records.append((
+        # Save clean CSV copy for downloads
+        clean_csv_path = os.path.join(DATA_DIR, "sample_superstore_clean.csv")
+        df.to_csv(clean_csv_path, index=False)
+        
+        # Also generate demo upload with intentional data quality issues for testing/demonstration
+        generate_demo_dirty_csv(df)
+        
+        # Insert or replace dataset metadata
+        cursor.execute("""
+            INSERT OR REPLACE INTO datasets (id, name, description, row_count, column_count, is_sample, file_path)
+            VALUES (?, ?, ?, ?, ?, 1, ?)
+        """, (
             sample_id,
-            row["order_id"],
-            row["order_date"],
-            row["customer_id"],
-            row["customer_name"],
-            row["segment"],
-            row["region"],
-            row["country"],
-            row["city"],
-            row["state"],
-            row["category"],
-            row["sub_category"],
-            row["product_id"],
-            row["product_name"],
-            row["quantity"],
-            row["unit_price"],
-            row["discount"],
-            row["shipping_cost"],
-            row["revenue"],
-            row["cost"],
-            row["profit"]
+            "Global Superstore Retail (2024-2025)",
+            "Deterministic benchmark retail sales dataset spanning 24 months across Technology, Furniture, and Office Supplies with verified financial relationships.",
+            len(orders),
+            len(df.columns),
+            clean_csv_path
         ))
         
-    cursor.executemany("""
-        INSERT INTO sales_data (
-            dataset_id, order_id, order_date, customer_id, customer_name, segment,
-            region, country, city, state, category, sub_category, product_id,
-            product_name, quantity, unit_price, discount, shipping_cost, revenue, cost, profit
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    """, insert_records)
-    
-    conn.commit()
+        # Delete any previous rows for clean idempotent re-seeding
+        cursor.execute("DELETE FROM sales_data WHERE dataset_id = ?", (sample_id,))
+        
+        # Insert rows in batch
+        insert_records = []
+        for row in orders:
+            insert_records.append((
+                sample_id,
+                row["order_id"],
+                row["order_date"],
+                row["customer_id"],
+                row["customer_name"],
+                row["segment"],
+                row["region"],
+                row["country"],
+                row["city"],
+                row["state"],
+                row["category"],
+                row["sub_category"],
+                row["product_id"],
+                row["product_name"],
+                row["quantity"],
+                row["unit_price"],
+                row["discount"],
+                row["shipping_cost"],
+                row["revenue"],
+                row["cost"],
+                row["profit"]
+            ))
+            
+        cursor.executemany("""
+            INSERT INTO sales_data (
+                dataset_id, order_id, order_date, customer_id, customer_name, segment,
+                region, country, city, state, category, sub_category, product_id,
+                product_name, quantity, unit_price, discount, shipping_cost, revenue, cost, profit
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, insert_records)
+        
+        conn.commit()
     conn.close()
+    
+    # Also ensure all 4 specialized domain benchmark datasets are seeded
+    from backend.datasets_catalog import seed_all_additional_datasets
+    seed_all_additional_datasets(force=force)
+    
     return sample_id
 
 def generate_demo_dirty_csv(clean_df: pd.DataFrame):

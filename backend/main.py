@@ -147,15 +147,22 @@ def list_datasets():
 
 @app.post("/api/datasets/reset-sample")
 def reset_sample_dataset():
-    """Restores the pristine deterministic sample retail dataset."""
+    """Restores all pristine deterministic benchmark datasets."""
     sample_id = seed_sample_data(force=True)
-    return {"message": "Sample dataset reseeded successfully.", "dataset_id": sample_id}
+    return {"message": "All benchmark datasets reseeded successfully.", "dataset_id": sample_id}
 
 @app.delete("/api/datasets/{dataset_id}")
 def delete_dataset(dataset_id: str):
     """Deletes an uploaded dataset and cascades to associated transactional records and disk files."""
-    if dataset_id == "sample_superstore":
-        raise HTTPException(status_code=400, detail="Cannot delete default built-in sample dataset. You may reset it instead.")
+    BUILT_IN_DATASETS = {
+        "sample_superstore",
+        "sales_revenue_analytics",
+        "customer_analytics",
+        "ecommerce_analytics",
+        "hr_analytics"
+    }
+    if dataset_id in BUILT_IN_DATASETS:
+        raise HTTPException(status_code=400, detail="Cannot delete built-in benchmark datasets. You may reset them instead.")
     with db_session() as conn:
         cursor = conn.cursor()
         cursor.execute("SELECT file_path FROM datasets WHERE id = ?", (dataset_id,))

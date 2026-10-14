@@ -36,11 +36,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           <select
             value={datasetId}
             onChange={(e) => onSelectDataset(e.target.value)}
-            className="text-xs font-semibold text-slate-800 bg-slate-50 border border-slate-300 rounded-md px-2.5 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-slate-400 transition-colors cursor-pointer max-w-[200px] sm:max-w-[260px] truncate"
+            className="text-xs font-semibold text-slate-800 bg-slate-50 border border-slate-300 rounded-md px-2.5 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-500 hover:border-slate-400 transition-colors cursor-pointer max-w-[220px] sm:max-w-[320px] md:max-w-[400px] truncate"
           >
             {datasets.map((d) => (
               <option key={d.id} value={d.id}>
-                {d.name} ({d.id})
+                {d.name}
               </option>
             ))}
           </select>

@@ -10,7 +10,7 @@ This document records the automated testing architecture, verification procedure
 InsightIQ/
 ├── backend/tests/
 │   ├── __init__.py
-│   └── test_backend.py        # 22 Pytest test cases covering API, KPIs, cleaning, SQL AST, ML, exports, security headers, metadata, temp file cleanup
+│   └── test_backend.py        # 28 Pytest test cases covering API, KPIs, cleaning, SQL AST, ML, exports, security headers, metadata, multi-dataset registration, domain verification, and deletion safety
 └── frontend/src/__tests__/
     ├── setupTests.ts
     └── App.test.tsx           # 3 Vitest component & filter interaction test cases
@@ -45,32 +45,38 @@ platform darwin -- Python 3.14.3, pytest-9.1.1, pluggy-1.6.0 -- /Users/mukeshpra
 cachedir: .pytest_cache
 rootdir: /Users/mukeshpramanik/Desktop/InsightIQ
 plugins: anyio-4.15.1
-collected 22 items
+collected 28 items
 
-backend/tests/test_backend.py::test_health_check PASSED                  [  4%]
-backend/tests/test_backend.py::test_list_datasets PASSED                 [  9%]
-backend/tests/test_backend.py::test_kpi_calculations_and_formulas PASSED [ 13%]
-backend/tests/test_backend.py::test_kpi_zero_denominator_safety PASSED   [ 18%]
-backend/tests/test_backend.py::test_formula_injection_defense PASSED     [ 22%]
-backend/tests/test_backend.py::test_canonical_mapping_inference PASSED   [ 27%]
-backend/tests/test_backend.py::test_data_cleaning_pipeline PASSED        [ 31%]
-backend/tests/test_backend.py::test_sql_lab_allowed_query PASSED         [ 36%]
-backend/tests/test_backend.py::test_sql_lab_rejects_disallowed_dml PASSED [ 40%]
-backend/tests/test_backend.py::test_sql_lab_rejects_multiple_statements PASSED [ 45%]
-backend/tests/test_backend.py::test_sql_lab_rejects_unauthorized_tables PASSED [ 50%]
-backend/tests/test_backend.py::test_safe_mape_calculation PASSED         [ 54%]
-backend/tests/test_backend.py::test_forecasting_pipeline PASSED          [ 59%]
-backend/tests/test_backend.py::test_rfm_segmentation PASSED              [ 63%]
-backend/tests/test_backend.py::test_csv_export_endpoint PASSED           [ 68%]
-backend/tests/test_backend.py::test_pdf_export_endpoint PASSED           [ 72%]
-backend/tests/test_backend.py::test_eda_analysis_sample_dataset PASSED   [ 77%]
-backend/tests/test_backend.py::test_eda_empty_dataset PASSED             [ 81%]
-backend/tests/test_backend.py::test_eda_missing_and_constant_numeric_columns PASSED [ 86%]
-backend/tests/test_backend.py::test_security_headers PASSED              [ 90%]
-backend/tests/test_backend.py::test_health_check_metadata PASSED         [ 95%]
-backend/tests/test_backend.py::test_upload_and_temp_file_cleanup PASSED  [100%]
+backend/tests/test_backend.py::test_health_check PASSED                  [  3%]
+backend/tests/test_backend.py::test_list_datasets PASSED                 [  7%]
+backend/tests/test_backend.py::test_kpi_calculations_and_formulas PASSED [ 10%]
+backend/tests/test_backend.py::test_kpi_zero_denominator_safety PASSED   [ 14%]
+backend/tests/test_backend.py::test_formula_injection_defense PASSED     [ 17%]
+backend/tests/test_backend.py::test_canonical_mapping_inference PASSED   [ 21%]
+backend/tests/test_backend.py::test_data_cleaning_pipeline PASSED        [ 25%]
+backend/tests/test_backend.py::test_sql_lab_allowed_query PASSED         [ 28%]
+backend/tests/test_backend.py::test_sql_lab_rejects_disallowed_dml PASSED [ 32%]
+backend/tests/test_backend.py::test_sql_lab_rejects_multiple_statements PASSED [ 35%]
+backend/tests/test_backend.py::test_sql_lab_rejects_unauthorized_tables PASSED [ 39%]
+backend/tests/test_backend.py::test_safe_mape_calculation PASSED         [ 42%]
+backend/tests/test_backend.py::test_forecasting_pipeline PASSED          [ 46%]
+backend/tests/test_backend.py::test_rfm_segmentation PASSED              [ 50%]
+backend/tests/test_backend.py::test_csv_export_endpoint PASSED           [ 53%]
+backend/tests/test_backend.py::test_pdf_export_endpoint PASSED           [ 57%]
+backend/tests/test_backend.py::test_eda_analysis_sample_dataset PASSED   [ 60%]
+backend/tests/test_backend.py::test_eda_empty_dataset PASSED             [ 64%]
+backend/tests/test_backend.py::test_eda_missing_and_constant_numeric_columns PASSED [ 67%]
+backend/tests/test_backend.py::test_security_headers PASSED              [ 71%]
+backend/tests/test_backend.py::test_health_check_metadata PASSED         [ 75%]
+backend/tests/test_backend.py::test_upload_and_temp_file_cleanup PASSED  [ 78%]
+backend/tests/test_backend.py::test_all_five_benchmark_datasets_registered PASSED [ 82%]
+backend/tests/test_backend.py::test_sales_revenue_analytics_suite PASSED [ 85%]
+backend/tests/test_backend.py::test_customer_analytics_rfm_suite PASSED  [ 89%]
+backend/tests/test_backend.py::test_ecommerce_analytics_forecasting_suite PASSED [ 92%]
+backend/tests/test_backend.py::test_hr_analytics_suite PASSED            [ 96%]
+backend/tests/test_backend.py::test_built_in_datasets_protected_from_deletion PASSED [100%]
 
-======================== 22 passed in 1.16s =========================
+======================== 28 passed in 1.68s =========================
 ```
 
 ---

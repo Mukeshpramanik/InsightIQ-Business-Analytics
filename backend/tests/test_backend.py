@@ -350,4 +350,93 @@ def test_upload_and_temp_file_cleanup():
     delete_res = client.delete(f"/api/datasets/{ds_id}")
     assert delete_res.status_code == 200
 
+# 10. Multi-Dataset Suite Tests (4 Additional Domain Datasets)
+def test_all_five_benchmark_datasets_registered():
+    response = client.get("/api/datasets")
+    assert response.status_code == 200
+    datasets = response.json()
+    dataset_ids = {d["id"] for d in datasets}
+    expected_ids = {
+        "sample_superstore",
+        "sales_revenue_analytics",
+        "customer_analytics",
+        "ecommerce_analytics",
+        "hr_analytics"
+    }
+    assert expected_ids.issubset(dataset_ids)
+    
+    # Assert every benchmark dataset has records and columns
+    for d in datasets:
+        if d["id"] in expected_ids:
+            assert d["row_count"] >= 2000
+            assert d["column_count"] >= 15
+            assert d["is_sample"] is True
+
+def test_sales_revenue_analytics_suite():
+    ds_id = "sales_revenue_analytics"
+    # KPIs
+    kpi_res = client.get(f"/api/analytics/dashboard?dataset_id={ds_id}")
+    assert kpi_res.status_code == 200
+    kpi_data = kpi_res.json()["kpis"]
+    assert kpi_data["total_revenue"] > 10000000.0
+    assert kpi_data["total_profit"] > 5000000.0
+    assert kpi_data["total_orders"] == 2800
+
+    # EDA
+    eda_res = client.get(f"/api/analytics/eda?dataset_id={ds_id}")
+    assert eda_res.status_code == 200
+    assert eda_res.json()["row_count"] == 2800
+
+def test_customer_analytics_rfm_suite():
+    ds_id = "customer_analytics"
+    seg_res = client.get(f"/api/analytics/segmentation?dataset_id={ds_id}")
+    assert seg_res.status_code == 200
+    seg_data = seg_res.json()
+    assert seg_data["total_customers_analyzed"] >= 250
+    assert len(seg_data["segments_summary"]) >= 4
+
+def test_ecommerce_analytics_forecasting_suite():
+    ds_id = "ecommerce_analytics"
+    fc_res = client.post(
+        "/api/analytics/forecast",
+        json={
+            "dataset_id": ds_id,
+            "target_metric": "revenue",
+            "granularity": "D",
+            "horizon": 14,
+            "model_type": "ridge"
+        }
+    )
+    assert fc_res.status_code == 200
+    fc_data = fc_res.json()
+    assert len(fc_data["forecast_points"]) == 14
+    assert "metrics" in fc_data
+
+def test_hr_analytics_suite():
+    ds_id = "hr_analytics"
+    kpi_res = client.get(f"/api/analytics/dashboard?dataset_id={ds_id}")
+    assert kpi_res.status_code == 200
+    kpis = kpi_res.json()["kpis"]
+    assert kpis["total_orders"] == 3000
+    assert kpis["total_revenue"] > 20000000.0
+    
+    # Insights
+    ins_res = client.get(f"/api/analytics/insights?dataset_id={ds_id}")
+    assert ins_res.status_code == 200
+    assert len(ins_res.json()) >= 1
+
+def test_built_in_datasets_protected_from_deletion():
+    built_ins = [
+        "sample_superstore",
+        "sales_revenue_analytics",
+        "customer_analytics",
+        "ecommerce_analytics",
+        "hr_analytics"
+    ]
+    for bid in built_ins:
+        res = client.delete(f"/api/datasets/{bid}")
+        assert res.status_code == 400
+        assert "Cannot delete built-in benchmark datasets" in res.json()["detail"]
+
+
 

@@ -113,9 +113,9 @@ Open **`http://localhost:5173`** in your browser.
 
 ## 5. Running Automated Tests
 
-InsightIQ includes comprehensive test suites covering all backend analytical contracts, formula safety, SQL AST security, security middleware, and frontend component rendering.
+InsightIQ includes comprehensive test suites covering all backend analytical contracts, formula safety, SQL AST security, security middleware, multi-domain dataset integrity, and frontend component rendering.
 
-### Run Backend Tests (22 Tests)
+### Run Backend Tests (28 Tests)
 ```bash
 PYTHONPATH=. backend/venv/bin/pytest backend/tests/test_backend.py -v
 ```
@@ -144,11 +144,23 @@ Detailed documentation files are available in the [`docs/`](docs/) directory:
 
 ---
 
-## 7. Database Schema & Seed Data
+## 7. Multi-Domain Benchmark Datasets & Schema Mapping
 
-The platform comes pre-seeded with a synthetic retail dataset (`sample_superstore`):
-- **3,200 transactions** spanning **24 continuous months** (2024-01-01 to 2025-12-31).
-- **Categories:** Technology (Phones, Laptops, Accessories), Furniture (Chairs, Tables, Bookcases), and Office Supplies (Storage, Paper, Binders).
+The platform comes pre-seeded with **5 production benchmark datasets** totalling **16,000 transactional rows** across 24 continuous months (2024-01-01 to 2025-12-31):
+
+1. **Global Superstore Retail (`sample_superstore`):** 3,200 retail omnichannel transactions across Technology, Furniture, and Office Supplies.
+2. **B2B Sales & Revenue (`sales_revenue_analytics`):** 2,800 enterprise sales pipeline contracts across Cloud Infrastructure, Cybersecurity, Enterprise Software, and Consulting.
+3. **Customer Loyalty (`customer_analytics`):** 3,400 retail loyalty transactions across 300 member cohorts (Platinum VIP, Gold, Silver, Regular) with power-law repeat purchase frequency for rich RFM quintile segmentation.
+4. **D2C E-Commerce (`ecommerce_analytics`):** 3,600 direct-to-consumer store orders across 450 shoppers tracking traffic acquisition channels (Organic, Paid Google, Social Ad, Email, Affiliate) with seasonal Q4 Black Friday/Cyber Week spikes.
+5. **Workforce & HR Analytics (`hr_analytics`):** 3,000 monthly workforce allocation lines across 320 employees in Engineering, Sales, Operations, and Finance, tracking total compensation cost, FTE headcount, and net human capital return.
+
+### Universal Relational Schema
+All 5 domain datasets seamlessly share the optimized `sales_data` relational schema:
+- **B2B Enterprise:** `order_id` = Deal ID, `customer_id` = Account ID, `segment` = Client Tier, `category` = Product Line.
+- **Customer Loyalty:** `order_id` = Receipt ID, `customer_id` = Loyalty ID, `segment` = Membership Tier.
+- **D2C E-Commerce:** `segment` = Marketing Channel, `region` = Fulfillment Zone, `category` = Merchandise Category.
+- **Workforce & HR:** `order_id` = Allocation ID, `customer_id` = Employee ID, `category` = Department, `revenue` = Value Output ($), `cost` = Compensation Cost ($), `profit` = Net Human Capital Return ($).
+
 - **Fixed Random Seed:** `random.seed(42)` ensures mathematical reproducibility across all demo sessions.
 - **Consistent Accounting Equations:**
   $$\text{Revenue} = \text{Quantity} \times \text{Unit Price} \times (1 - \text{Discount})$$

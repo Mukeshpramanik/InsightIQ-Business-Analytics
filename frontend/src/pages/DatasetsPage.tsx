@@ -12,6 +12,25 @@ interface DatasetsPageProps {
   onSelectDataset: (id: string) => void;
 }
 
+const getDomainBadge = (id: string, isSample: boolean) => {
+  switch (id) {
+    case 'sample_superstore':
+      return { label: 'Retail & Wholesale', style: 'bg-blue-50 text-blue-700 border-blue-200' };
+    case 'sales_revenue_analytics':
+      return { label: 'B2B Enterprise', style: 'bg-purple-50 text-purple-700 border-purple-200' };
+    case 'customer_analytics':
+      return { label: 'Customer Loyalty', style: 'bg-teal-50 text-teal-700 border-teal-200' };
+    case 'ecommerce_analytics':
+      return { label: 'D2C E-Commerce', style: 'bg-amber-50 text-amber-700 border-amber-200' };
+    case 'hr_analytics':
+      return { label: 'Workforce & HR', style: 'bg-rose-50 text-rose-700 border-rose-200' };
+    default:
+      return isSample
+        ? { label: 'Benchmark', style: 'bg-slate-100 text-slate-700 border-slate-200' }
+        : { label: 'User Upload', style: 'bg-emerald-50 text-emerald-700 border-emerald-200' };
+  }
+};
+
 export const DatasetsPage: React.FC<DatasetsPageProps> = ({
   currentDatasetId,
   onSelectDataset,
@@ -40,7 +59,7 @@ export const DatasetsPage: React.FC<DatasetsPageProps> = ({
   }, []);
 
   const handleResetSample = async () => {
-    if (!window.confirm('Resetting the sample dataset will re-seed all 3,200 benchmark retail records. Proceed?')) {
+    if (!window.confirm('Resetting benchmark datasets will re-seed all 5 pristine domain datasets (16,000+ total records: Retail, B2B, Customer, E-Commerce, and HR). Proceed?')) {
       return;
     }
     try {
@@ -121,15 +140,23 @@ export const DatasetsPage: React.FC<DatasetsPageProps> = ({
                 }`}
               >
                 <div className="space-y-1">
-                  <div className="flex items-center gap-2.5">
+                  <div className="flex flex-wrap items-center gap-2">
                     <h3 className="text-sm font-bold text-slate-900">{d.name}</h3>
+                    {(() => {
+                      const badge = getDomainBadge(d.id, d.is_sample);
+                      return (
+                        <span className={`px-2 py-0.5 rounded-md text-[10px] font-semibold border ${badge.style}`}>
+                          {badge.label}
+                        </span>
+                      );
+                    })()}
                     {d.is_sample && (
-                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-blue-100 text-blue-700">
-                        Built-In Benchmark
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-slate-100 text-slate-700 border border-slate-200">
+                        Benchmark
                       </span>
                     )}
                     {isActive && (
-                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700">
+                      <span className="px-2 py-0.5 rounded-full text-[10px] font-bold bg-emerald-100 text-emerald-700 border border-emerald-200">
                         Active Scope
                       </span>
                     )}
